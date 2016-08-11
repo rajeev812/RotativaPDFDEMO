@@ -1,0 +1,44 @@
+﻿@charset "utf-8";
+
+/* Meyer Reset v1.0 | 20080212 */
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote,
+pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, font, img, ins, kbd, q,
+s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul,
+li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th,
+td {margin: 0;padding: 0;border: 0;outline: 0;font-size: 12px;vertical-align: baseline;background: transparent;}
+body {line-height: 1;}ol, ul {list-style: none;}
+:focus {outline: 0;}ins {text-decoration: none;}del {text-decoration: line-through;}
+table {border-collapse: collapse;}
+
+/* FORMS */
+
+textarea, input[type='text'], input[type='password'], select { border: 1px solid #ccc; background: #fff; }
+textarea:hover, input[type='text']:hover, input[type='password']:hover, select:hover { border-color: #ffcc66; }
+textarea:focus, input[type='text']:focus, input[type='password']:focus, select:focus { border-color: #ffcc66; }
+input, select { cursor: pointer; }
+input[type='text'],input[type='password'] { cursor: text; }
+input[type='checkbox'],input[type='radio'] { float:left; }
+
+/* LINKS */
+
+a { font-size:1em; line-height:1.8em;text-decoration:none; cursor:pointer;}/* a  font-size: changed from 1.2em to 1em */
+a:link { color: #0099CC; }
+a:visited { text-decoration: none; color:#0099CC; }
+a:active, a:hover { text-decoration: underline; color: #0099CC; }
+a:focus { text-decoration: underline; color: #0099CC; }
+
+/* TEXT CLASSES */
+
+/*.small {font-size:.8em;margin-bottom:1.875em;line-height:1.875em;}*/
+.small {font-size:.8em;margin-bottom:1.6em;line-height:1.4em;}
+.large {font-size:1.3em;line-height:1.5em;margin-bottom:1.25em;}
+.hide {display:none !important;}
+.error, .alert, .success {padding:8px 8px 8px 38px;margin-bottom:1.6em;border:2px solid #ddd; font-size:1.1em; line-height:1.5em;}
+.error {background:#FBE3E4;color:#8a1f11;border-color:#FBC2C4;background:url(../images/icon/error_icon.png) left center no-repeat;}
+.alert {background:#FFF6BF;color:#514721;border-color:#FFD324;background:url(../images/icon/alert_icon.png) left center no-repeat;}
+.success {background:#E6EFC2;color:#264409;border-color:#C6D880;background:url(../images/icon/success_icon.png) left center no-repeat;}
+.error a {color:#8a1f11; background:none; padding:0; margin:0; }
+.alert a {color:#514721; background:none; padding:0; margin:0; }
+.success a {color:#264409; background:none; padding:0; margin:0; }
+.text-center {text-align: center;}
+.text-right {text-align: right;}

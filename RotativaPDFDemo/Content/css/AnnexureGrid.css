@@ -1,0 +1,107 @@
+﻿    .webGrid {
+        /*margin: 4px;*/
+        border-collapse: collapse;
+        margin: 0 auto;
+
+    }
+
+    .webGridWrapper {
+        min-width: 320px;
+        /*max-width: 900px;*/
+        /*overflow: auto;*/
+    }
+
+    .webGridHeader {
+        padding: 0.5em; /* add gradient */
+        background-color: #3D87B6;
+        /*background-image: -moz-linear-gradient(top, #606060, #909090);
+        background-image: -ms-linear-gradient(top, #606060, #909090);
+        background-image: -o-linear-gradient(top, #606060, #909090);
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#606060), to(#909090));
+        background-image: -webkit-linear-gradient(top, #606060, #909090);
+        background-image: linear-gradient(top, #606060, #909090);*/
+        background-image: -moz-linear-gradient(top, #3D87B6, #53AAD7);
+        background-image: -ms-linear-gradient(top, #3D87B6, #53AAD7);
+        background-image: -o-linear-gradient(top, #3D87B6, #53AAD7);
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#3D87B6), to(#53AAD7));
+        background-image: -webkit-linear-gradient(top, #3D87B6, #53AAD7);
+        background-image: linear-gradient(top, #3D87B6, #53AAD7);
+        color: #fff;
+        font-family:'Times New Roman';
+        font-size:14px;
+    }
+
+    .webGrid th, .webGrid td {
+        border: 1px solid #C0C0C0;
+        padding: 4px 6px 4px 6px;
+    }
+
+        .webGrid th a {
+            color: #DADADA;
+        }
+
+            .webGrid th a:hover {
+                color: #FFFFFF;
+                -webkit-box-shadow: 0 0 15px #FFFFFF;
+                -moz-box-shadow: 0 0 15px #FFFFFF;
+                box-shadow: 0 0 15px #FFFFFF;
+                background-color: #C0C0C0;
+            }
+
+        .webGrid td a {
+            color: #08088A;
+        }
+
+            .webGrid td a:hover {
+                color: #0000FF;
+                -webkit-box-shadow: 0 0 15px #00BFFF;
+                -moz-box-shadow: 0 0 15px #00BFFF;
+                box-shadow: 0 0 15px #00BFFF;
+                background-color: #58D3F7;
+            }
+
+    .webGrid tfoot {
+        line-height: .8em;
+        text-align: center;
+        color: #303030;
+        text-shadow: 0 1px 1px rgba(255,255,255,0.3);
+        letter-spacing: .25em;
+        font-size: small;
+    }
+
+        .webGrid tfoot a {
+            color: #0000FF;
+            text-decoration: none;
+        }
+
+            .webGrid tfoot a:hover {
+                color: #0000FF;
+                font-weight: bold;
+                text-decoration: underline;
+                -webkit-box-shadow: none;
+                -moz-box-shadow: none;
+                box-shadow: none;
+                background-color: transparent;
+            }
+
+    .webGridAlt {
+        background-color: #E8E8E8;
+        color: #000;
+    }
+
+    .cash {
+        float: right;
+    }
+    /*input:not([type=submit]){
+        border: 1px solid #e2e2e2;
+        background: #fff;
+        color: #333;
+        font-size: 1em;
+        margin: 2px 0 2px 0px;
+        padding: 2px;
+        width: 170px;
+    }*/
+
+    div.ui-datepicker {
+        font-size: 11px;
+    }

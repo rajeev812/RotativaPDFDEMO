@@ -1,0 +1,16 @@
+@charset "utf-8";
+@import "base.css";
+@import "layout.css";
+@import "typography.css";
+@import "color.css";
+/* CSS Document */
+
+.calendar{
+	width:100%;
+}
+	.calendar input[type="text"] {
+		width:80px;
+	}
+	.calendar > img {
+		margin:2px 0 0 2px;
+	}

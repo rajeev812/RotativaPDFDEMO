@@ -1,0 +1,522 @@
+﻿
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    position: relative;
+    min-height: 1px;
+    /*padding:4px;*/
+    padding: 2px;
+    /*padding-left: 20px;
+            padding-right: 13px;*/
+    /*margin-right:-4px;*/
+    margin-bottom: -8px;
+}
+
+.panel {
+    margin-bottom: 15px;
+    /*margin-right: -20px;*/
+}
+
+.panel-heading {
+    padding: 4px 10px;
+    border-bottom: 1px solid transparent;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+}
+
+body {
+    /* font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; */
+    font-size: 15px;
+    line-height: 1.42857143;
+    color: #666666;
+    /* background-color: #D6D6D6; */
+    background-color: #ffffff;
+}
+
+.alert {
+    padding: 1px;
+    margin-bottom: 10px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    min-height: 55px;
+    margin-right: -13px;
+    margin-left: -15px;
+}
+
+textarea.form-control {
+    height: 42px;
+    margin-bottom: 10px;
+}
+
+.panel-title {
+    margin-top: 0;
+    margin-bottom: -3px;
+    font-size: 13px;
+    color: inherit;
+}
+
+div.row.panel.panel-primary {
+    height: 56px;
+}
+
+.panel-body {
+    padding-top: 5px;
+    padding-bottom: 3px;
+}
+
+.label {
+    font-size: 100%;
+}
+
+br {
+    display: block;
+    margin: 10px 0;
+}
+
+.divMarginPaddingClass {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+/*.col-sm-6 {
+    margin-bottom: -6px;
+}*/
+
+.AddNewBtn {
+    padding: 6px;
+    position: relative;
+    top: 5px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.AddNewBtnDisabled {
+    /*background-color: #7fc3ee;
+    color: #c1c1c1;
+    cursor: not-allowed;
+    font-weight: normal;*/
+    background: url('../../Content/images/btn-diabled.jpg')repeat-x 0 0 transparent !important;
+   
+    border: medium none !important;
+    color: #FFFFFF !important;
+    display: inline !important;
+    font-family: Arial !important;
+    /* font-size: 1.1em; */
+    font-weight: bold !important;
+    height: 25px !important;
+    padding: 1px 24px 3px 20px !important;
+    width: 27% !important;
+    line-height: 1.4em !important;
+    vertical-align: middle !important;
+    float: left !important;
+    cursor: not-allowed !important;
+    margin-top: 9px !important;
+    text-align: center !important;
+    font-weight: inherit !important;
+}
+
+.BckBtnCls {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: normal;
+}
+
+.btnsave {
+    height: 30px;
+    width: 70px;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+/*.BtnDisabled {
+    height: 30px;
+    width: 70px;
+    padding: 5px;
+    margin-top: 5px;
+}*/
+
+.descriptext {
+    margin-bottom: 1px;
+}
+
+.amtfield {
+    text-align: right !important;
+}
+
+.ckbox {
+    width: 26px;
+    height: 26px;
+}
+
+.checkboxCenterAlign {
+    position: relative;
+    top: 3px;
+    margin-left: 35px !important;
+}
+
+.TopMargin {
+    top: 6px;
+    position: relative;
+    padding: 12px;
+    background-color: #53AAD7;
+    color: #fff;
+    margin-left: -13px;
+}
+
+.BottomMargin {
+    margin-left: -13px;
+}
+
+.Btn, #flip {
+    background: url('../../Content/images/button-generic-tile.jpg') repeat-x scroll 0 0 transparent;
+    border: medium none;
+    color: #FFFFFF;
+    display: inline;
+    font-family: Arial;
+    /* font-size: 1.1em; */
+    font-weight: bold;
+    height: 25px;
+    padding: 1px 24px 3px 20px;
+    width: 27%;
+    line-height: 1.4em;
+    vertical-align: middle;
+    margin: 0;
+    float: left;
+    cursor: pointer;
+    margin-top: 9px;
+    text-align: center;
+    font-weight: inherit;
+}
+
+#flip {
+    margin-top: 4px;
+    margin-right: 8px;
+}
+
+#btnSave {
+    margin-right: 8px;
+}
+
+button[disabled], input[disabled='disabled'], input[type=submit]:disabled, .BtnDisabled {
+    background: url('../../Content/images/btn-diabled.jpg')repeat-x 0 0 transparent;
+    border: medium none;
+    color: #FFFFFF;
+    display: inline;
+    font-family: Arial;
+    /* font-size: 1.1em; */
+    font-weight: bold;
+    height: 25px;
+    padding: 1px 24px 3px 20px;
+    width: 27%;
+    line-height: 1.4em;
+    vertical-align: middle;
+    margin: 0;
+    float: left;
+    cursor: not-allowed;
+    margin-top: 9px;
+    text-align: center;
+    font-weight: inherit;
+}
+
+.BtnDisabled {
+    background: url('../../Content/images/btn-diabled.jpg')repeat-x 0 0 transparent;
+    border: medium none;
+    color: #FFFFFF;
+    display: inline;
+    font-family: Arial;
+    /* font-size: 1.1em; */
+    font-weight: bold;
+    height: 25px;
+    padding: 1px 24px 3px 20px;
+    width: 27%;
+    line-height: 1.4em;
+    vertical-align: middle;
+    margin: 0;
+    float: left;
+    cursor: not-allowed;
+    margin-top: 9px;
+    text-align: center;
+    font-weight: inherit;
+}
+
+.TaxAuditBannerInRuppe {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 13px;
+}
+
+.txtparticilar {
+    height: 100px;
+    width: 500px;
+}
+
+.AnnDetailsButton {
+    text-align: center;
+    position: relative;
+    margin-left: 44%;
+    width: 35%;
+    bottom: 5px;
+}
+
+.AnnDetailsTextBox {
+    margin-left: 40%;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+
+.Ann3BtnSubmit {
+    text-align: center;
+    position: relative;
+    margin-left: 48%;
+    width: 8%;
+    bottom: 5px;
+}
+
+table {
+    width: 100%;
+    /*margin-left: auto;
+        margin-right: auto;*/
+    border: thin solid;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: center;
+}
+
+th, td {
+    border: thin solid;
+    border-collapse: collapse;
+}
+
+#fixed-div1 {
+    position: fixed !important;
+    position: absolute; /*ie6 */
+    width: 100%;
+    background-color: lightgray;
+    border-top: 1px solid #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    height: 41px;
+    text-align: center;
+    padding-top:2px;
+}
+
+.txtboxBorder {
+    border: none;
+    width: 98%;
+}
+
+.txtboxBorderReadonly {
+    height: 35px;
+    border: none;
+    width: 100%;
+    background-color: #fffbd2;
+}
+
+.thwidth {
+    width: 100px;
+}
+
+.thwidthReply {
+    border: none;
+    width: 98%;
+}
+
+.btnDesignforAllAnnex {
+    right: -4.4%;
+    float: right;
+    width: 33%;
+}
+
+.btnDesignforAllAnnex1 {
+    right: -3.8%;
+    float: right;
+    width: 30%;
+}
+
+.btnDesignforAllAnnex2 {
+    right: -9%;
+    float: right;
+    width: 30%;
+}
+
+.AnnualReportBtn {
+    text-align: center;
+    position: relative;
+    margin-left: 48%;
+    width: 8%;
+    bottom: 5px;
+}
+
+/***********************/
+.rowfirst, .rowcoll {
+    /*border: 0 solid green;*/
+    height: auto;
+    overflow: auto;
+    margin-left: 4%;
+    margin-right: 2%;
+    /*margin-bottom: 5px;*/
+    width: 92%;
+    border-top: thin solid;
+    padding: 3px;
+}
+
+.rowfirstforadd {
+    /*border: 0 solid green;*/
+    height: auto;
+    overflow: auto;
+    margin-left: 4%;
+    margin-right: 2%;
+    /*margin-bottom: 5px;*/
+    width: 92%;
+    /*border-top: thin solid;*/
+    padding: 3px;
+}
+
+.rowsecond {
+    height: auto;
+    overflow: auto;
+    margin-left: 4%;
+    margin-right: 2%;
+    /*margin-bottom: 5px;*/
+    width: 92%;
+    border-top: thin solid;
+    padding: 3px;
+}
+
+.rowsecondforadd {
+    height: auto;
+    overflow: auto;
+    margin-left: 4%;
+    margin-right: 2%;
+    /*margin-bottom: 5px;*/
+    width: 92%;
+    /*border-top: thin solid;*/
+    padding: 3px;
+}
+
+.Nameofborrower {
+    float: left;
+    width: 12%;
+    margin-left: 5px;
+    text-align: center;
+    /*padding: 0 5px;*/
+}
+
+.reasonforremiting {
+    float: left;
+    width: 14%;
+    margin-left: 5px;
+    text-align: center;
+    /*padding: 0 5px;*/
+}
+
+.digc {
+    float: left;
+    width: 7%;
+    margin-left: 5px;
+    text-align: center;
+}
+
+.digctext {
+    float: left;
+    width: 10.6%;
+    /*margin-left: -8px;*/
+    margin-right: 5px;
+    text-align: center;
+    padding: 0 5px;
+}
+
+#addRecordF {
+    margin-left: 10px;
+}
+
+.Delete {
+    float: left;
+    width: 1%;
+    padding-left: 5px;
+    margin-left: 5px;
+    text-align: center;
+}
+
+.txtparticilar {
+    height: 100px;
+    width: 500px;
+}
+
+.Annx23atblDesign {
+    border: none;
+    height: 25px;
+    width: 110px;
+    background-color: #fffbd2;
+}
+
+.Annex23ATD {
+    border: none;
+    width: 110px;
+}
+
+.Annex23BTD1 {
+    border: none;
+    width: 80px;
+}
+
+.Annex23BTD2 {
+    border: none;
+    width: 120px;
+}
+
+.Annex23BTD3 {
+    border: none;
+    width: 125px;
+}
+
+.Annex23BTD4 {
+    border: none;
+    width: 180px;
+}
+
+.Annex23BTD5 {
+    border: none;
+    width: 120px;
+    height: 25px;
+}
+
+.txtReadonly {
+    background-color: #fffbd2;
+}
+
+.fontBold {
+    font-weight: bold;
+}
+
+.txtparticilar {
+    height: 100px;
+    width: 500px;
+}
+
+.txtNoBorder {
+    border: none;
+}
+
+.IncreaseMargin5 {
+    margin-bottom: 5px;
+}
+
+.IncreaseMargin1 {
+    margin-bottom: 1px;
+}
+
+.ReduceMargin5 {
+    margin-bottom: -5px;
+}
+.tblAnnexureXXXV{
+    width:900px;
+     margin-left:auto;
+      margin-right:auto;
+}

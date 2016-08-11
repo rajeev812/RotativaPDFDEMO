@@ -1,0 +1,16 @@
+﻿.webGrid {
+    width: 100%;
+}
+
+
+    .webGrid th, .webGrid td {
+        padding: 4px 6px 4px 6px;
+        text-align: center;
+    }
+
+.panelbodyForGrid {
+    padding-bottom: 0px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+}

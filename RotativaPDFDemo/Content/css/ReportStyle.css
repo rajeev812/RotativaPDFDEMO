@@ -1,0 +1,118 @@
+﻿#fixed-div {
+    position: fixed !important;
+    position: absolute; /*ie6 */
+    width: 100%;
+    background-color: lightgray;
+    border-top: 1px solid #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 900;
+}
+
+table.SubTable {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table.annextable {
+    text-align: center;
+}
+
+.annextable th {
+    text-align: center;
+}
+
+.SubTable tr, td, th {
+    border: 1px solid black;
+}
+
+.span_2_of_2 {
+    width: 50%;
+    font-weight: 600;
+}
+
+.span_3_of_2 {
+    /*width: 100%;*/
+}
+
+.span_2_of_2_centre {
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    /*font-weight:700;*/
+    font-size: large;
+}
+
+.span_1_of_2 {
+    width: 47.2%;
+}
+
+.span_1_of_21 {
+    /*width: 47.2%;*/
+    text-align: left;
+}
+
+table.annextable {
+    margin: 0 auto;
+    width: 100%;
+}
+
+td.rightalign {
+    text-align: right;
+}
+
+td.centeralign {
+    text-align: center;
+}
+
+td.leftalign {
+    text-align: left;
+}
+
+.verticalHead {
+    -moz-transform: rotate(-90deg); /* FF3.5+ */
+    -o-transform: rotate(-90deg); /* Opera 10.5 */
+    -webkit-transform: rotate(-90deg); /* Saf3.1+, Chrome */
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); /* IE6,IE7 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)"; /* IE8 */
+    vertical-align: top;
+    padding: 15px 0;
+}
+
+body {
+    text-align: center;
+}
+
+ .divAlign {
+            margin-left: 5%;
+            margin-right: 5%;
+            text-align: justify;
+        }
+
+        .TextCenterAndBold {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .rightAlignPage1 {
+            margin-right: 12%;
+            text-align: right;
+            clear: both;
+        }
+
+        .tblAmt {
+            text-align: right;
+        }
+
+        .vertical {
+            -webkit-transform: rotate(90deg);
+            -moz-transform: rotate(90deg);
+            -o-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+            transform-origin:left top 0;
+            height:100%;
+        }

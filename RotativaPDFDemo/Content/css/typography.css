@@ -1,0 +1,36 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+
+/* BASIC TYPOGRAPHY */
+
+html {
+	font-size: 62.5%;
+	font-family: Arial;
+}
+strong, th, thead td, h1, h2, h3, h4, h5, h6, dt { font-weight: bold; }
+cite, em, dfn { font-style: italic; }
+code, kbd, samp, pre, tt, var {
+	font-size: 92%;
+	font-family: monaco, "Lucida Console", courier, monospace;
+}
+input[type='text'], input[type='password'] {
+	font-size: 62.5%;
+	font-family: Arial;
+}
+del { text-decoration: line-through; }
+small, sup, sub { font-size: 85%; }
+sup { vertical-align: super; }
+sub { vertical-align: sub; }
+.container {
+	font-size: 1.2em;
+	line-height: 1.8em;
+}
+h1 { font-size: 1.8em; }
+h2 { font-size: 1.6em; }
+h3 { font-size: 1.4em; }
+h4 { font-size: 1.3em; }
+h5 { font-size: 1.2em; }
+h6 { font-size: 1em; }
+
+fieldset label, .label { font-weight:normal; }

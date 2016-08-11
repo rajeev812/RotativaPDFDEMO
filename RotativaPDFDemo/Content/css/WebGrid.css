@@ -1,0 +1,52 @@
+﻿
+     .webGrid {
+        margin: 4px;
+        border-collapse: collapse;
+        width: 90%;
+        background-color: #C1D4E6;
+        float:left;
+        margin-left:5%;
+    }
+
+    .header {
+        background-color: #fafafa;
+        font-weight: bold;
+        color: #5C5C5C;
+    }
+
+    .webGrid th, .webGrid td {
+        border: 1px solid #C0C0C0;
+        padding: 5px;
+        color: #000;
+    }
+
+    .alt {
+       /*background-color: #f9f9f9;*/
+        background-color: #E4E9F5;
+        color: #000;
+    }
+
+    .gridHead a:hover {
+        text-decoration: underline;
+    }
+
+    .description {
+        width: auto;
+    }
+
+    .select {
+        background-color: #71857C;
+    }
+
+    .action {
+        width: 100px;
+    }
+
+    .head1 {
+        width: 200px;
+    }
+
+    .code {
+        width: 100px;
+    }
+

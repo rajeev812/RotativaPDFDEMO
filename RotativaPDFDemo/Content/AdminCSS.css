@@ -1,0 +1,56 @@
+﻿.rajAdmin{
+        width: 100%;
+    float: left;
+    margin-bottom: 5%;
+}
+.col {
+    width: 18%;
+    margin-right: 7%;
+    background-color: #3A97BF;
+    float: left;
+    height: 45px;
+    height: 95px;
+    color: #fff;
+    cursor: pointer;
+}
+.insideCol {
+    text-align: center;
+    padding-top: 32px;
+    font-size: 17px;
+    color: #fff;
+    cursor: pointer;
+}
+.insideCol1 {
+    text-align: center;
+    padding-top: 17px;
+    font-size: 17px;
+    color: #fff;
+    cursor: pointer;
+}
+/*.rajAdmin a:link {
+    color: #fff !important;
+    text-decoration:none;
+     font-size: 17px;
+    color:#fff;
+     cursor:pointer;
+     text-align:center;
+
+}
+.rajAdmin a :visited {
+    text-decoration: none;
+     color: #fff !important; 
+      font-size: 17px;
+    color:#fff;
+     cursor:pointer;
+    text-align:center;
+}*/
+.rajAdmin a {
+    text-align:center;
+    margin-top:5px;
+    text-decoration: none;
+     color: #fff !important; 
+      font-size: 17px;
+    color:#fff;
+     cursor:pointer;
+    text-align:center;
+}

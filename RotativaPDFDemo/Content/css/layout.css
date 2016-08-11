@@ -1,0 +1,6224 @@
+
+/* Basic styles */
+ul {
+    list-style-type: disc;
+}
+
+    ul li {
+        margin-left: .85em;
+    }
+
+    ul ul {
+        list-style-type: square;
+    }
+
+        ul ul ul {
+            list-style-type: circle;
+        }
+
+ol {
+    list-style-position: outside;
+    list-style-type: decimal;
+}
+
+textarea {
+    resize: none;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+table {
+    border-left: 1px solid;
+    border-top: 1px solid;
+}
+
+    table th, table td {
+        border-bottom: 1px solid;
+        border-right: 1px solid;
+        padding: .8em;
+    }
+
+h1 {
+    margin: 10px 0 5px;
+}
+
+h2 {
+    margin: 0 0 12px;
+}
+
+h3 {
+    margin: 10px 0 12px;
+}
+
+h4 {
+    margin: 1.385em 0 .692em;
+}
+
+h5 {
+    margin: 1.5em 0 .75em;
+}
+
+h6 {
+    margin: 1.8em 0 .9em;
+}
+/* Basic style ends*/
+
+
+/* Site layout */
+#container {
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    width: 1000px;
+}
+/* Header */
+#header {
+    float: left;
+    overflow: visible;
+    position: relative;
+    width: 1000px;
+    z-index: 1;
+    background: url("../images/header-bg-tile.jpg") scroll 0 37% transparent;
+    background-repeat: repeat-x;
+}
+
+#quickLinks {
+    background: none repeat scroll 0 0 #F1F1F1;
+    float: left;
+    height: 28px;
+    width: 1000px;
+}
+
+#logo {
+    background-image: url(../images/lfar-Logo.jpg);
+    background-repeat: no-repeat;
+    float: left;
+    height: 82px;
+    width: 155px;
+}
+
+    #logo h1 {
+        display: block;
+        margin: 0;
+        padding: 20px;
+        text-indent: -9999px;
+    }
+    #logobank {
+    background-image: url(../images/banklogo.png);
+    background-repeat: no-repeat;
+    float: left;
+    height: 82px;
+    width: 155px;
+}
+     #logobank h1 {
+        display: block;
+        margin: 0;
+        padding: 20px;
+        text-indent: -9999px;
+    }
+
+#topNavWrap {
+    background: none repeat scroll 0 0 #F1F1F1;
+    float: left;
+    height: 28px;
+    width: 1000px;
+}
+
+#quickNav, #settingsHelp, #footerQuickNav {
+    margin: 4px 0;
+    padding: 0;
+    float: right;
+    font-family: Arial;
+    display: inline;
+    margin: 8px 4px 8px 0;
+}
+
+#settingsHelp {
+    display: inline;
+    float: left;
+    margin-left: 10px;
+    width: 300px;
+}
+
+.selectLocale {
+    float: left;
+    width: auto;
+    position: relative;
+}
+
+    .selectLocale .language {
+        float: left;
+    }
+
+    .selectLocale .downArrow {
+        right: 0;
+        top: 0;
+        position: relative;
+    }
+
+#quickNav li, #settingsHelp li, #footerQuickNav li {
+    background: transparent url(../images/pipe.png) no-repeat scroll 0 2px;
+    display: inline;
+    margin: 0;
+    padding-left: 10px;
+    padding-top: 1px;
+    float: left;
+}
+
+    #quickNav li.firstchild, #settingsHelp li.firstchild, #footerQuickNav .firstchild {
+        background: none;
+        padding-left: 0;
+    }
+
+    #quickNav li a, #settingsHelp li a, #footerQuickNav li a {
+        padding-right: 6px;
+        text-decoration: none;
+        color: #000;
+        font-size: 1.1em;
+        font-family: Arial;
+        line-height: 1.1em;
+    }
+
+    #footerQuickNav li a {
+        color: #5C5C5C;
+    }
+
+    #quickNav li span.welcomeText {
+        padding-right: 8px;
+        text-decoration: none;
+        color: #000;
+        font-size: 1.1em;
+        font-family: Arial;
+        line-height: 1.1em;
+        padding-left: 1px;
+    }
+
+    #quickNav li a:hover, #settingsHelp li a:hover, #footerQuickNav li a:hover {
+        text-decoration: underline;
+    }
+
+#searchWrap {
+    float: left;
+    height: 47px;
+    width: 1000px;
+    background-color: #f1f1f1;
+    background: url(../images/search-bg-tile.jpg);
+}
+
+#search {
+    float: left;
+    display: inline;
+    margin-left: 10px;
+    margin-top: 10px;
+    width: auto;
+}
+
+#searchbox {
+    font-size: 1.2em;
+    font-family: Arial;
+    color: #5C5C5C;
+    height: 20px;
+    width: 515px;
+    padding: 0 0 0 2px;
+    margin: 3px 10px 2px 0;
+    vertical-align: middle;
+    float: left;
+    display: inline;
+    line-height: 1.2em;
+}
+
+.searchCategories {
+    margin: 8px 8px 0 0;
+    float: left;
+    display: inline;
+    color: #FFFFFF;
+    font-family: Arial;
+    font-size: 1.1em;
+}
+
+#search input[type=button], #search input[type=submit] {
+    background: url("../images/btn-search.jpg") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    color: #FFFFFF;
+    display: inline;
+    font-family: Arial;
+    font-size: 1.1em;
+    font-weight: bold;
+    height: 27px;
+    padding: 2px 24px 3px 2px;
+    width: 91px;
+    line-height: 1.4em;
+    vertical-align: middle;
+    margin: 0;
+    float: left;
+    display: inline;
+}
+
+#search select {
+    font-size: 1.2em;
+    font-family: Arial;
+    color: #5C5C5C;
+    padding: 2px 0 2px 0;
+    margin: 3px 6px 3px 0;
+    width: 200px;
+    line-height: 1.4em;
+    height: 22px;
+    vertical-align: middle;
+    float: left;
+    display: inline;
+    position: relative;
+}
+
+#search .button {
+    margin: 2px 0;
+}
+
+/* Main navigation bar */
+#navWrap {
+    background: url("../images/menu-lft.jpg") scroll left bottom transparent;
+    background-repeat: no-repeat;
+    float: right;
+    height: 37px;
+    margin-right: 25px;
+    margin-top: 45px;
+    text-align: center;
+    width: 810px;
+    display: inline;
+}
+
+#nav {
+    float: left;
+    height: 100%;
+    margin-left: 5px;
+    display: inline;
+    width: 798px;
+    background: url("../images/menu-bg-tile.jpg") repeat scroll 0 0 transparent;
+    font-family: Arial;
+}
+
+    #nav, #nav ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        list-style-position: outside;
+        position: relative;
+    }
+
+#nav {
+    background: url("../images/menu-bg-tile.jpg") repeat scroll 0 0 transparent;
+    display: inline;
+    float: left;
+    font-family: Arial;
+    height: 100%;
+    margin-left: 5px;
+    width: 798px;
+}
+
+    #nav > li {
+        border-right: 1px solid #ADADAD;
+        height: 36px;
+    }
+
+    #nav a {
+        display: block;
+        padding: 0px 5px;
+        color: #000;
+        text-decoration: none;
+        background-color: #fff;
+    }
+
+    #nav > li a {
+        background: none;
+        background-repeat: no-repeat;
+        color: #EFEDED;
+        display: block;
+        font-size: 14px;
+        height: 100%;
+        line-height: 2.25em;
+        overflow: visible;
+        padding: 3px 30px 0 16px;
+        text-decoration: none;
+    }
+
+
+    #nav ul li:hover {
+        background: url("../images/bg-tile-header.jpg") repeat-x scroll 0 0 transparent;
+        color: #fff;
+    }
+
+    #nav ul li a {
+        color: #000;
+    }
+
+    #nav ul li:hover > a {
+        color: #fff;
+    }
+
+    #nav ul ul li a {
+        color: #000;
+    }
+
+    #nav ul ul li:hover a {
+        color: #fff;
+    }
+
+    #nav > li:hover > a, #nav > li:focus > a {
+        float: left;
+        overflow: hidden;
+        background: url("../images/menu-bg-tile-2.jpg");
+        background-repeat: repeat-x;
+    }
+
+    #nav li {
+        float: left;
+        position: relative;
+        margin-left: 0px;
+    }
+
+    #nav ul {
+        position: absolute;
+        display: none;
+        width: 182px;
+        top: 35px;
+        left: 0px;
+        border-top: 1px solid #ccc;
+        z-index: 10000;
+    }
+
+        #nav ul li a {
+            text-align: left;
+        }
+
+    #nav .downArrow {
+        right: 10px;
+        top: 12px;
+    }
+
+    #nav ul li {
+        background: #fff;
+        color: #000;
+        border-left: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        height: 25px;
+        width: 180px;
+        position: relative;
+    }
+
+    #nav li ul a {
+        color: #333333;
+        float: left;
+        font-size: 1.2em;
+        height: 25px;
+        line-height: 1.8em;
+        padding-right: 0;
+        width: 174px;
+    }
+
+    #nav ul ul {
+        width: 181px;
+        position: absolute;
+        left: 180px;
+        top: auto;
+        border-right: 1px solid #ccc;
+    }
+
+    #nav li:hover ul ul, #nav li:hover ul ul ul, #nav li:hover ul ul ul ul {
+        display: none;
+    }
+
+    #nav li:hover ul, #nav li li:hover ul, #nav li li li:hover ul, #nav li li li li:hover ul {
+        display: block;
+    }
+
+    #nav li ul li:hover span {
+        background: url("../images/col-arrow-right.jpg");
+        float: right;
+        height: 25px;
+        width: 24px;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        background-repeat: no-repeat;
+    }
+
+.menuRightCorner {
+    float: right;
+    height: 37px;
+    width: 7px;
+    background: url(../images/menu-rgt.jpg);
+    background-repeat: no-repeat;
+}
+
+/* Main navigation bar Ends*/
+
+/* Main navigation bar */
+#navWrap1 {
+    background: url("../images/menu-lft.jpg") scroll left bottom transparent;
+    background-repeat: no-repeat;
+    float: right;
+    height: 37px;
+    /*margin-right: 25px;
+    margin-top: 45px;*/
+    text-align: center;
+    width: 120px;
+    display: inline;
+}
+
+#nav1 {
+    float: left;
+    height: 100%;
+    margin-left: 5px;
+    display: inline;
+    width: 120px;
+    /*background: url("../images/menu-bg-tile.jpg") repeat scroll 0 0 transparent;*/
+    font-family: Arial;
+}
+
+    #nav1, #nav1 ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        list-style-position: outside;
+        position: relative;
+    }
+
+        /*#nav1 {
+    background: url("../images/menu-bg-tile.jpg") repeat scroll 0 0 transparent;
+    display: inline;
+    float: left;
+    font-family: Arial;
+    height: 100%;
+    margin-left: 5px;
+    width: 798px;
+}*/
+
+        #nav1 > li {
+            border-right: 1px solid #ADADAD;
+            height: 36px;
+        }
+
+        #nav1 a {
+            display: block;
+            padding: 0px 5px;
+            color: #000;
+            text-decoration: none;
+            background-color: #fff;
+        }
+
+        #nav1 > li a {
+            background: none;
+            background-repeat: no-repeat;
+            /*color: #EFEDED;*/
+            display: block;
+            font-size: 14px;
+            height: 100%;
+            line-height: 2.25em;
+            overflow: visible;
+            padding: 3px 30px 0 16px;
+            text-decoration: none;
+        }
+
+
+        #nav1 ul li:hover {
+            background: url("../images/bg-tile-header.jpg") repeat-x scroll 0 0 transparent;
+            color: #fff;
+        }
+
+        #nav1 ul li a {
+            color: #000;
+        }
+
+        #nav1 ul li:hover > a {
+            color: #000;
+        }
+
+        #nav1 ul ul li a {
+            color: #000;
+        }
+
+        #nav1 ul ul li:hover a {
+            color: #fff;
+        }
+
+        #nav1 > li:hover > a, #nav1 > li:focus > a {
+            float: left;
+            overflow: hidden;
+            background: url("../images/menu-bg-tile-2.jpg");
+            background-repeat: repeat-x;
+        }
+
+        #nav1 li {
+            float: left;
+            position: relative;
+            margin-left: 0px;
+        }
+
+        #nav1 ul {
+            position: absolute;
+            display: none;
+            width: 182px;
+            top: 35px;
+            left: 0px;
+            border-top: 1px solid #ccc;
+            z-index: 10000;
+        }
+
+            #nav1 ul li a {
+                text-align: left;
+            }
+
+        #nav1 .downArrow {
+            right: 10px;
+            top: 12px;
+        }
+
+        #nav1 ul li {
+            background: #fff;
+            color: #000;
+            border-left: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+            height: 25px;
+            width: 180px;
+            position: relative;
+        }
+
+        #nav1 li ul a {
+            color: #333333;
+            float: left;
+            font-size: 1.2em;
+            height: 25px;
+            line-height: 1.8em;
+            padding-right: 0;
+            width: 174px;
+        }
+
+        #nav1 ul ul {
+            width: 181px;
+            position: absolute;
+            left: 180px;
+            top: auto;
+            border-right: 1px solid #ccc;
+        }
+
+        #nav1 li:hover ul ul, #nav1 li:hover ul ul ul, #nav1 li:hover ul ul ul ul {
+            display: none;
+        }
+
+        #nav1 li:hover ul, #nav1 li li:hover ul, #nav1 li li li:hover ul, #nav1 li li li li:hover ul {
+            display: block;
+        }
+
+        #nav1 li ul li:hover span {
+            background: url("../images/col-arrow-right.jpg");
+            float: right;
+            height: 25px;
+            width: 24px;
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            background-repeat: no-repeat;
+        }
+
+.menuRightCorner {
+    float: right;
+    height: 37px;
+    width: 7px;
+    background: url(../images/menu-rgt.jpg);
+    background-repeat: no-repeat;
+}
+
+/* Main navigation bar Ends*/
+/* Header ends */
+
+/*Shopping Cart Summary*/
+#cartSummaryWrap {
+    height: auto;
+    overflow: hidden;
+    position: absolute;
+    right: 32px;
+    top: 29px;
+    width: 258px;
+    z-index: 500;
+    display: block;
+}
+
+#cartSummary {
+    clear: both;
+    display: block;
+    float: left;
+    height: 45px;
+    width: 258px;
+    color: #FFFFFF;
+    background: url("../images/shoppingbag.jpg") no-repeat scroll 0 0;
+}
+
+.checkOut {
+    background: url("../images/btn-checkout.jpg") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    color: #FFFFFF;
+    display: inline;
+    float: left;
+    font-family: Arial;
+    font-size: 1.1em;
+    font-weight: bold;
+    height: 25px;
+    padding: 0 4px 2px;
+    position: relative;
+    width: 75px;
+    margin-top: 10px;
+}
+
+#shopBag {
+    cursor: pointer;
+    position: relative;
+    display: inline;
+    float: left;
+    font-family: Arial;
+    font-weight: bold;
+    height: 12px;
+    padding: 17px 17px 15px 48px;
+    width: 118px;
+}
+
+.downArrow {
+    background: url("../images/dwnarow-dark.png") no-repeat scroll 0 0 transparent;
+    display: inline;
+    float: left;
+    height: 12px;
+    margin-left: 4px;
+    position: absolute;
+    right: 2px;
+    width: 12px;
+    top: 16px;
+}
+
+#shopBag .downArrow {
+    right: 0;
+    position: relative;
+    top: 0;
+}
+
+#shopBag .preview {
+    float: left;
+}
+
+#cartSummary h3 img {
+    padding-left: 8px;
+    text-align: right;
+}
+
+#cartSummary .checkOutLink {
+    clear: none;
+    float: left;
+    padding: 4px;
+    width: auto;
+}
+
+#cartSummaryDetail {
+    background: #FFF;
+    border: 6px solid #ddd;
+    border-top: none;
+    clear: both;
+    display: none;
+    float: left;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-align: left;
+    width: 246px;
+}
+
+    #cartSummaryDetail h2 {
+        color: #0099CC;
+        margin-left: 12px;
+        margin-top: 12px;
+        width: 190px;
+        float: left;
+        display: inline;
+        font-size: 1.4em;
+    }
+
+    #cartSummaryDetail span.closeCart {
+        float: right;
+        display: inline;
+        height: 23px;
+        width: 28px;
+        background: url("../images/cross.jpg");
+        margin-top: 7px;
+        margin-right: 8px;
+        cursor: pointer;
+    }
+    /*.scrollWrap{max-height:200px;}*/
+    #cartSummaryDetail ul {
+        padding: 0;
+        width: 232px;
+        float: left;
+    }
+
+        #cartSummaryDetail ul li {
+            border-bottom: 1px solid #CCCCCC;
+            display: block;
+            list-style-type: none;
+            margin-left: 0;
+            overflow: hidden;
+            padding: 4px 0;
+            width: 213px;
+        }
+
+            #cartSummaryDetail ul li.firstChild {
+                border-top: 1px solid #ccc;
+            }
+
+    #cartSummaryDetail .cartSummaryItems {
+        height: auto;
+        margin: 0 0 0 12px;
+        max-height: 180px;
+        overflow-y: auto;
+        padding-right: 0;
+        position: relative;
+        height: 180px;
+    }
+
+        #cartSummaryDetail .cartSummaryItems .cartContents {
+            float: left;
+            display: inline;
+        }
+
+            #cartSummaryDetail .cartSummaryItems .cartContents .itemCart {
+                float: left;
+                display: inline;
+                width: 213px;
+            }
+
+            #cartSummaryDetail .cartSummaryItems .cartContents .dealHeader {
+                float: left;
+                display: inline;
+                width: 213px;
+                margin-bottom: 10px;
+            }
+
+                #cartSummaryDetail .cartSummaryItems .cartContents .dealHeader h4 {
+                    float: left;
+                    display: inline;
+                    margin-top: 5px;
+                    width: 150px;
+                    padding-bottom: 10px;
+                    color: #000;
+                    margin-bottom: 0px;
+                    padding-left: 3px;
+                    font-size: 1.2em;
+                }
+
+#111cartSummaryDetail .cartSummaryItems .cartContents .dealHeader a {
+    float: right;
+    padding-right: 10px;
+    font-size: 1.1em;
+    padding-top: 2px;
+}
+
+
+#cartSummaryDetail .cartSummaryItems .itemImage {
+    clear: left;
+    display: inline;
+    float: left;
+    margin-right: 8px;
+    overflow: hidden;
+}
+
+    #cartSummaryDetail .cartSummaryItems .itemImage img {
+        height: 51px;
+        width: 29px;
+    }
+
+#cartSummaryDetail .cartSummaryItems .itemInfo {
+    clear: right;
+    float: left;
+    line-height: 1.5em;
+    margin: 0;
+    width: 166px;
+}
+
+#cartSummaryDetail .cartSummaryItems .nameAndConfig {
+    float: left;
+    text-align: left;
+    width: 130px;
+}
+
+.cartSummaryItems .nameAndConfig .modelName, .cartSummaryItems .nameAndConfig .manufacturerName {
+    width: 100px;
+    float: left;
+    display: inline;
+}
+
+.cartSummaryItems .nameAndConfig .manufacturerName {
+    height: 18px;
+    line-height: 1.3em;
+    width: 100px;
+    color: #0099CC;
+}
+
+.cartSummaryItems .nameAndConfig .modelName {
+    height: 13px;
+    width: 100px;
+}
+
+#cartSummaryDetail .cartSummaryItems .productPrice, .cartSummaryItems .nameAndConfig .quantity {
+    font-size: 1.1em;
+    line-height: 1.4em;
+    width: 35px;
+    text-align: right;
+    float: left;
+}
+
+#cartSummaryDetail .cartSummaryItems .productPrice {
+    font-size: 1.2em;
+}
+
+#cartSummaryDetail .cartSummaryItems .removeItem, #cartSummaryDetail .cartSummaryItems .removeDeal {
+    float: right;
+    height: 15px;
+    line-height: 1.1em;
+    display: inline;
+    font-size: 1.1em;
+    padding-top: 10px;
+    padding-right: 5px;
+}
+
+#cartSummaryDetail .cartSummaryItems .removeDeal {
+    padding-top: 3px;
+}
+
+.cartSummaryItems .nameAndConfig .quantity {
+    text-align: left;
+    font-weight: normal;
+    float: left;
+    display: inline;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    width: 100px;
+}
+
+    .cartSummaryItems .nameAndConfig .quantity a {
+        height: 11px;
+        line-height: 1.1em;
+        display: inline;
+    }
+
+#cartSummaryDetail .total {
+    background: none repeat scroll 0 0 #FFFEDC;
+    border: 1px solid #CCCCCC;
+    display: inline;
+    float: left;
+    margin-left: 8px;
+    margin-right: 6px;
+    margin-top: 6px;
+    overflow: hidden;
+    width: 228px;
+    font-weight: bold;
+}
+
+#cartSummaryDetail .itemsNo {
+    float: left;
+    margin-left: 10px;
+    display: inline;
+}
+
+#cartSummaryDetail .subTotal {
+    display: inline;
+    float: right;
+    margin-right: 10px;
+}
+
+#cartSummaryDetail .itemsNo, #cartSummaryDetail .subTotal {
+    font-size: 1.2em;
+    line-height: 1.4em;
+}
+
+    #cartSummaryDetail .subTotal b {
+    }
+
+
+#cartSummaryDetail .cartDetailLink {
+    float: left;
+    height: 24px;
+    line-height: 20px;
+    margin: 8px 0 0 8px;
+    display: inline;
+    padding-bottom: 8px;
+}
+
+    #cartSummaryDetail .cartDetailLink a {
+        font-size: 1.2em;
+    }
+
+#cartSummaryDetail .checkOut {
+    display: inline;
+    float: right;
+    margin-right: 6px;
+    margin-top: 6px;
+}
+/*Shopping Cart Summary ends*/
+
+/* Footer --SAURABH*/
+#footer {
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    clear: both;
+    float: left;
+    overflow: hidden;
+    text-align: center;
+    width: 1000px;
+    background-image: url(../images/footer-tile.jpg);
+    background-repeat: repeat-x;
+    font-family: Arial;
+    height: 30px;
+}
+
+.subscribe {
+    display: inline;
+    float: left;
+    height: 150px;
+    margin-left: 20px;
+    padding: 20px 0 0;
+    text-align: left;
+    width: 265px;
+}
+
+.locale {
+    color: #000000;
+    font-family: Arial;
+    font-size: 1.4em;
+    position: relative;
+    width: 60px;
+}
+
+    .locale .downArrow {
+        top: 0px;
+    }
+
+#emailSubscription {
+    margin-top: 20px;
+}
+
+    #emailSubscription span {
+        font-family: Arial;
+        font-size: 1.8em;
+        color: #000;
+    }
+
+#subscribeEmailForm {
+    margin-top: 5px;
+    font-family: Arial;
+}
+
+    #subscribeEmailForm p {
+        color: #FFFFFF;
+        float: left;
+        font-size: 1.1em;
+        margin: 10px 0 0;
+        line-height: 1.1em;
+    }
+
+.emailGo {
+    background: url("../images/btn-go.jpg") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    color: #FFFFFF;
+    display: inline;
+    float: left;
+    font-family: Arial;
+    font-size: 1.1em;
+    font-weight: bold;
+    height: 25px;
+    padding: 0 4px 2px;
+    position: relative;
+    width: 52px;
+}
+
+#subscribeEmailForm .subscribeEmail {
+    color: #5C5C5C;
+    float: left;
+    font-family: Arial;
+    font-size: 1.1em;
+    height: 19px;
+    line-height: 1.1em;
+    padding: 0 0 0 2px;
+    position: relative;
+    width: 192px;
+    margin: 2px 10px 2px 0;
+}
+
+.footerLinks {
+    display: inline;
+    float: right;
+    margin: 0px;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+    .footerLinks dl {
+        float: left;
+        display: inline;
+        padding: 0px;
+        margin-right: 20px;
+        margin-top: 20px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+    }
+
+    .footerLinks dt {
+        font-size: 14px;
+        margin-bottom: 10px;
+        color: #000;
+        font-weight: bold;
+    }
+
+    .footerLinks dd a, .footerLinks dd a:link, .footerLinks dd a:visited, .footerLinks dd a:focus, .footerLinks dd a:active {
+        color: #ffffff;
+        font-size: 1.2em;
+    }
+
+        .footerLinks dd a:hover {
+            text-decoration: underline;
+        }
+
+
+.contactUs {
+    float: left;
+    text-align: left;
+    width: 100%;
+    color: #FFFFFF;
+    height: 44px;
+    border-top: 1px solid #ccc;
+}
+
+.needHelp, .contactNumber {
+    float: left;
+    margin-left: 10px;
+    margin-top: 14px;
+}
+
+.needHelp {
+    font-size: 1.4em;
+}
+
+.contactNumber {
+    font-size: 1.8em;
+    margin-top: 10px;
+}
+
+#socialBookmarks {
+    display: inline;
+    float: right;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.rss, .twitter, .facebook {
+    float: left;
+    width: 33px;
+    height: 31px;
+    margin-left: 3px;
+    display: inline;
+}
+
+.rss {
+    background: url("../images/rss.jpg") no-repeat;
+}
+
+.twitter {
+    background: url("../images/twitter.jpg") no-repeat;
+}
+
+.facebook {
+    background: url("../images/facebook.jpg") no-repeat;
+}
+
+#footerQuickNavWrap {
+    float: left;
+    margin-top: 15px;
+    width: 1000px;
+}
+
+#footerQuickNav {
+    float: left;
+}
+
+.securedBy {
+    display: inline;
+    float: right;
+    margin-right: 20px;
+}
+
+.weAccept {
+    display: inline;
+    float: left;
+    margin-left: 14px;
+    margin-right: 120px;
+}
+/* Footer ends */
+
+#breadcrumb {
+    background-color: #CCCCCC;
+    clear: both;
+    width: 1000px;
+    float: left;
+    font-size: 1em;
+    height: 30px;
+    color: #000;
+    font-weight: bold;
+}
+
+    #breadcrumb a {
+        font-size: 1em;
+        line-height: 2.6em;
+    }
+
+#content {
+    clear: both;
+    overflow: hidden;
+    position: relative;
+    background-color: #CCCCCC;
+    width: 100%;
+}
+
+.threeColWrap {
+    float: left;
+    background: url("../images/threecol.jpg");
+    margin-bottom: 6px;
+}
+
+.twoColWrap {
+    float: left;
+    background: url("../images/twocol.jpg");
+    margin-bottom: 6px;
+}
+
+.twoColWraped {
+    float: left;
+    background: url("../images/twocoled.jpg");
+}
+
+#content #catalogMainWrap {
+    display: inline;
+    float: left;
+    position: relative;
+    width: 720px;
+    overflow: hidden;
+    margin-top: 11px;
+}
+
+    #content #catalogMainWrap #bannerWrap {
+        float: left;
+        height: 294px;
+        margin-bottom: 11px;
+        overflow: hidden;
+        position: relative;
+    }
+
+
+
+/* 
+    root element for the scrollable. 
+    when scrolling occurs this element stays still. 
+	*/
+div.scrollable {
+    float: left;
+    height: 294px;
+    overflow: hidden;
+    position: relative;
+    width: 1000px;
+    display: block;
+    background-color: #FFFFFF;
+}
+    /* 
+		root element for scrollable items. Must be absolutely positioned 
+		and it should have a extremely large width to accomodate scrollable items. 
+		it's enough that you set width and height for the root element and 
+		not for this element. 
+	*/
+    div.scrollable div.items {
+        /* this cannot be too large */
+        position: absolute;
+        width: 20000em;
+    }
+
+        div.scrollable div.items a {
+            float: left;
+            text-decoration: none;
+        }
+
+        div.scrollable div.items .floatLabel {
+            -moz-opacity: 0.6;
+            border-top: 1px solid;
+            bottom: 0;
+            filter: alpha(opacity=60);
+            font-size: 1.1667em;
+            font-weight: bold;
+            height: 50px;
+            left: 0;
+            line-height: 50px;
+            opacity: 0.6;
+            position: absolute;
+            width: 250px;
+        }
+        /* 
+		a single item. must be floated in horizontal scrolling. 
+		typically, this element is the one that *you* will style 
+		the most. 
+	*/
+        div.scrollable div.items > div {
+            float: left;
+        }
+
+/*carousel*/
+.carouselWrap {
+    clear: both;
+    overflow: hidden;
+    position: relative;
+    margin: 0 0 11px 0;
+}
+
+    .carouselWrap h3 {
+        font-size: 1.4em;
+        margin: 2px 0;
+    }
+
+.carousel {
+    background-color: #FFF;
+    float: left;
+    padding: 0 15px 0 15px;
+}
+
+a.prev, a.next, a.prevPage, a.nextPage {
+    background: url(../images/arrow-lft.jpg) left center no-repeat;
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-size: 1px;
+    height: 153px;
+    width: 17px;
+}
+/* next button uses another background image */
+a.nextPage {
+    background: url(../images/arrow-rgt.jpg) right center no-repeat;
+    clear: right;
+}
+/* disabled navigational button */
+a.prevPage.disabled {
+    background: url(../images/arrow-lft-disabled.jpg) left center no-repeat;
+    cursor: auto;
+}
+
+a.nextPage.disabled {
+    background: url(../images/arrow-rgt-disabled.jpg) left center no-repeat;
+    cursor: auto;
+}
+
+.carouselWrap .scrollable .items .item a {
+    float: left;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+/*#catalogMainWrap .carouselWrap .scrollable .items .item a span.priceBanner{position:absolute;background:url("../images/ping-deals.png");float:left;height:60px;width:60px;display:block;top:18px;right:1px;}*/
+/*carousel ends*/
+#catalogMainWrap #bannerWrap {
+    width: 720px;
+}
+
+#catalogMainWrap .carouselWrap {
+    width: 715px;
+    margin: 0 0 11px 0;
+}
+
+#content #catalogRecentItemsWrap {
+    float: left;
+}
+
+    #content #catalogRecentItemsWrap .carouselWrap {
+        width: 1000px;
+    }
+
+#catalogRecentItemsWrap .carouselWrap .carousel {
+    height: 142px;
+    width: 970px;
+}
+
+    #catalogRecentItemsWrap .carouselWrap .carousel h3 {
+        color: #0099CC;
+        padding: 2px 0;
+    }
+
+#catalogRecentItemsWrap .carouselWrap div.scrollable {
+    width: 933px;
+    height: 106px;
+}
+
+#catalogRecentItemsWrap .carouselWrap .scrollable .items .itemWrapper {
+    width: 82px;
+    height: 106px;
+    float: left;
+    margin: 0 11px 0 11px;
+    display: inline;
+}
+
+#catalogRecentItemsWrap .carouselWrap .scrollable .items .item {
+    position: absolute;
+    width: 82px;
+    height: 106px;
+    display: block;
+    text-align: center;
+}
+
+    #catalogRecentItemsWrap .carouselWrap .scrollable .items .item img {
+        width: 72px;
+        height: 85px;
+    }
+
+    #catalogRecentItemsWrap .carouselWrap .scrollable .items .item span {
+        float: left;
+        height: 16px;
+        display: block;
+        font-size: 1.2em;
+        line-height: 1.2em;
+        width: 100%;
+    }
+
+#catalogRecentItemsWrap a.prev, #catalogRecentItemsWrap a.next, #catalogRecentItemsWrap a.prevPage, #catalogRecentItemsWrap a.nextPage {
+    height: 106px;
+}
+/*catalogRecentItemsWrap ends*/
+/* Home page */
+#content #catalogMainWrap #bannerWrap .homeBanner {
+    height: 294px;
+    width: 720px;
+}
+
+#catalogMainWrap .carouselWrap .carousel {
+    height: 194px;
+}
+
+    #catalogMainWrap .carouselWrap .carousel h3 {
+        color: #0099CC;
+    }
+
+        #catalogMainWrap .carouselWrap .carousel h3 a {
+            margin-left: 11px;
+            font-size: 0.857em;
+            font-weight: normal;
+        }
+
+#catalogMainWrap .carouselWrap div.scrollable {
+    width: 648px;
+    height: 160px;
+}
+
+#catalogMainWrap .carouselWrap .scrollable .items .itemWrapper {
+    width: 150px;
+    height: 160px;
+    float: left;
+    margin: 0 5px 0 5px;
+}
+
+#catalogMainWrap .carouselWrap .scrollable .items .item {
+    position: absolute;
+    width: 148px;
+    height: 153px;
+    padding: 2px;
+    display: block;
+    text-align: center;
+}
+
+    #catalogMainWrap .carouselWrap .scrollable .items .item img {
+        width: 100px;
+        height: 113px;
+    }
+
+    #catalogMainWrap .carouselWrap .scrollable .items .item span {
+        float: left;
+        height: 20px;
+        display: none;
+        font-size: 1.4em;
+        line-height: 1.2em;
+        font-weight: bold;
+        text-align: center;
+        width: 50%;
+    }
+
+        #catalogMainWrap .carouselWrap .scrollable .items .item span.action {
+            background: url("../images/product-buy-btn-tile.jpg") repeat scroll 0 0 transparent;
+            color: #FFF;
+        }
+
+        #catalogMainWrap .carouselWrap .scrollable .items .item span.view {
+            width: 100%;
+            background: url("../images/product-buy-btn-tile.jpg") repeat scroll 0 0 transparent;
+            color: #FFF;
+        }
+
+    #catalogMainWrap .carouselWrap .scrollable .items .item .productTitle {
+        width: 100%;
+        color: #0099CC;
+        margin: 2px 0 0 0;
+        display: block;
+        margin: 0;
+    }
+
+    #catalogMainWrap .carouselWrap .scrollable .items .item:hover {
+        border: 2px solid #CCCCCC;
+        padding: 0;
+    }
+
+        #catalogMainWrap .carouselWrap .scrollable .items .item:hover span {
+            display: block;
+        }
+
+#content #catalogSubWrap {
+    display: inline;
+    float: left;
+    position: relative;
+    width: 280px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+#catalogRelatedItemWrap {
+    float: left;
+    position: relative;
+    margin-top: 11px;
+}
+
+    #catalogRelatedItemWrap .relatedInfo {
+        background-color: #FFFFFF;
+        float: left;
+    }
+
+.relatedInfo .item {
+    border-left: 1px solid #CCC;
+    border-bottom: 1px solid #CCC;
+    display: block;
+    margin: 0;
+    overflow: hidden;
+    padding-right: 15px;
+    height: 97px;
+    float: left;
+}
+
+.relatedInfo .itemImage {
+    clear: left;
+    display: inline;
+    float: left;
+    overflow: hidden;
+    width: 77px;
+}
+
+    .relatedInfo .itemImage a {
+        float: left;
+    }
+
+    .relatedInfo .itemImage img {
+        height: 90px;
+        width: 77px;
+    }
+
+.relatedInfo .itemInfo {
+    clear: right;
+    line-height: 1.2em;
+    margin: 5px 0 0 0;
+    width: 187px;
+    float: left;
+}
+
+    .relatedInfo .itemInfo h3 {
+        font-size: 1.4em;
+        margin: 0;
+    }
+
+    .relatedInfo .itemInfo p {
+        margin-top: 3px;
+        font-size: 1.1em;
+        float: left;
+        clear: both;
+        width: 100%;
+    }
+
+        .relatedInfo .itemInfo p a {
+            float: left;
+            font-size: 1.091em;
+        }
+
+#catalogActionItemWrap .actionItem {
+    background: url(../images/rgt-banners-tile.jpg) repeat-x top right;
+    width: 271px;
+    height: 52px;
+    border: 3px solid #FFF;
+    float: right;
+}
+
+#catalogActionItemWrap {
+    float: right;
+    position: relative;
+    margin-top: 11px;
+}
+
+    #catalogActionItemWrap a {
+        float: left;
+        text-decoration: none;
+        width: 100%;
+    }
+
+    #catalogActionItemWrap .actionItem a .register, #catalogActionItemWrap .actionItem a .redeemCards, #catalogActionItemWrap .actionItem a .trackOrder {
+        background: url(../images/register.jpg) no-repeat top left;
+        display: block;
+        float: left;
+        padding-left: 71px;
+        font-size: 1.8em;
+        font-weight: bold;
+        line-height: 2.8em;
+        color: #FFF;
+    }
+
+    #catalogActionItemWrap .actionItem a .register {
+        background: url(../images/register.jpg) no-repeat top left;
+    }
+
+    #catalogActionItemWrap .actionItem a .redeemCards {
+        background: url(../images/redeem.jpg) no-repeat top left;
+    }
+
+    #catalogActionItemWrap .actionItem a .trackOrder {
+        background: url(../images/trackorder.jpg) no-repeat top left;
+    }
+
+#catalogOptionsWrap {
+    float: right;
+    position: relative;
+    margin-top: 11px;
+}
+
+    #catalogOptionsWrap .options {
+        background-color: #FFFFFF;
+        float: left;
+        width: 277px;
+        height: 192px;
+    }
+
+        #catalogOptionsWrap .options h3 {
+            font-size: 1.4em;
+            margin-left: 77px;
+            color: #0099CC;
+        }
+
+        #catalogOptionsWrap .options span {
+            display: block;
+            overflow: hidden;
+            clear: both;
+            padding-left: 77px;
+            font-size: 1.2em;
+        }
+/*catalogSubItemWrap ends*/
+
+#itemLinksWrapper {
+    float: left;
+    width: 433px;
+    margin-bottom: 15px;
+    display: block;
+    overflow: hidden;
+}
+
+    #itemLinksWrapper .ui-widget-content {
+        border: 0;
+        background: none;
+    }
+
+    #itemLinksWrapper .ui-widget-header {
+        background: none;
+        border: none;
+        height: 31px;
+        padding: 0;
+    }
+
+    #itemLinksWrapper .ui-state-default, #itemLinksWrapper .ui-widget-content .ui-state-default {
+        background: url("../images/product-buy-btn-tile.jpg") repeat-x scroll 0 0 transparent;
+        background-color: #404040;
+        border: none;
+        height: 100%;
+    }
+
+        #itemLinksWrapper .ui-state-default a, #itemLinksWrapper .ui-widget-content .ui-state-default a {
+            color: #FFF;
+            height: 100%;
+            font-size: 1em;
+            padding: 0 15px 0 15px;
+            float: left;
+        }
+
+    #itemLinksWrapper .ui-state-active, #itemLinksWrapper .ui-widget-content .ui-state-active {
+        background: #FFF;
+        border: none;
+        height: 100%;
+    }
+
+        #itemLinksWrapper .ui-state-active h3, #itemLinksWrapper .ui-widget-content .ui-state-active h3, #itemLinksWrapper .ui-state-default h3, #itemLinksWrapper .ui-widget-content .ui-state-default h3 {
+            margin: 0;
+            float: left;
+            height: 100%;
+        }
+
+        #itemLinksWrapper .ui-state-active a, #itemLinksWrapper .ui-widget-content .ui-state-active a {
+            color: #0099CC;
+            height: 100%;
+            font-size: 1em;
+            padding: 0 15px 0 15px;
+            float: left;
+        }
+
+    #itemLinksWrapper .ui-widget-content .ui-corner-bottom {
+        border: 0;
+        background: #FFF;
+    }
+
+    #itemLinksWrapper .ui-tabs {
+        padding: 0;
+    }
+
+        #itemLinksWrapper .ui-tabs .ui-tabs-panel {
+            padding: 15px 0 4px 15px;
+        }
+
+#brandLinksWrapper, #dealLinksWrapper {
+    float: left;
+}
+
+#itemLinksWrapper .links {
+    width: 418px;
+    float: left;
+    height: 184px;
+}
+
+    #itemLinksWrapper .links span {
+        float: left;
+        width: 104px;
+        height: 23px;
+        color: #5C5C5C;
+    }
+
+        #itemLinksWrapper .links span a {
+            color: #5C5C5C;
+            font-size: 1.2em;
+        }
+/*itemLinksWrapper ends*/
+
+#advertisementsWrapper {
+    float: left;
+    margin: 0 0 15px 11px;
+    overflow: hidden;
+    position: relative;
+}
+
+    #advertisementsWrapper .bannerBig {
+        height: 203px;
+        width: 268px;
+        margin-top: 31px;
+    }
+
+    #advertisementsWrapper .bannerSmall {
+        height: 110px;
+        width: 277px;
+    }
+
+    #advertisementsWrapper a {
+        float: left;
+    }
+/*advertisementsWrapper ends*/
+/* Home page ends*/
+
+/*My Account - June 3 ,2010*/
+#myAccountNavWrap {
+    float: left;
+    /*width: 201px;*/
+    margin: 0 6px 15px 0;
+    display: inline;
+}
+
+/*#extrasSectionWrap{			
+			margin:0 0 15px 6px; /*extra section - ads*/
+/*}*/
+#extrasSectionWrap {
+    display: inline;
+    float: left;
+    margin: 0;
+    position: relative;
+    width: 201px;
+    background: #fff;
+    height: auto;
+}
+
+#extrasSection {
+    float: left;
+}
+
+    #extrasSection h3 {
+        padding-left: 12px;
+    }
+
+#comingSoon, #moreOptions, #recentSearches {
+    float: left;
+    padding-bottom: 4px;
+}
+
+    #moreOptions span, #recentSearches span {
+        float: left;
+        margin: 2px 0 2px 12px;
+        width: 180px;
+        font-size: 1.1em;
+    }
+
+        #moreOptions span a, #recentSearches span a {
+            float: left;
+            color: #5C5C5C;
+        }
+
+        .custom-radio{
+		width: 20px;
+		height: 20px;
+        display: inline-block;
+		position: relative;
+		z-index: 1;
+		top: 3px;
+		background: url("../images/csscheckbox_option.png") no-repeat 0 0 transparent;
+	}
+	.custom-radio.selected{
+		background-position: 0 -20px;
+	}
+	.custom-radio input[type="radio"]{
+		margin: 1px;
+		position: absolute;
+		z-index: 2;            
+		cursor: pointer;
+		outline: none;
+		opacity: 0;
+		/* CSS hacks for older browsers */
+		_noFocusLine: expression(this.hideFocus=true); 
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+		filter: alpha(opacity=0);
+		-khtml-opacity: 0;
+		-moz-opacity: 0;
+	}
+    label.answer-label{
+        padding-left: 3px;
+        padding-right: 10px;
+        display: inline-block;
+        line-height: 20px;
+        font-size: 16px;
+        font-weight:700;
+        cursor: pointer;
+    }
+/*new code*/
+input[type=radio].css-checkbox {
+    position: absolute;
+    z-index: -1000;
+    left: -1000px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
+
+    input[type=radio].css-checkbox + label.css-label, input[type=radio].css-checkbox + label.css-label.clr {
+        padding-left: 25px;
+        height: 20px;
+        display: inline-block;
+        line-height: 20px;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        font-size: 20px;
+        vertical-align: middle;
+        cursor: pointer;
+    }
+
+        input[type=radio].css-checkbox:checked + label.css-label, input[type=radio].css-checkbox + label.css-label.chk {
+            background-position: 0 -20px;
+        }
+
+label.css-label {
+    background-image: url("../images/csscheckbox_option.png");
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+/*new code*/
+
+
+.heading {
+    background: url("../images/bg-tile-header.jpg") repeat-x scroll 0 0 transparent;
+    color: #FFFFFF;
+    float: left;
+    height: 25px;
+    width: 201px;
+}
+
+.myAccountNav {
+    width: 201px;
+    height: 100%;
+    background-color: #fff;
+    color: #5C5C5C;
+    overflow: hidden;
+}
+
+.myAccountNav1 {
+    /*width: 201px;*/
+    height: 100%;
+    background-color: #fff;
+    color: #5C5C5C;
+    overflow-x: scroll;
+}
+
+.myAccountNav ul {
+    line-height: 32px;
+    list-style-type: none;
+    margin: 35px 0px 0px 0px;
+    padding: 0;
+    border-top: 1px solid #CCCCCC;
+    float: left;
+    width: 201px;
+}
+
+    .myAccountNav ul li {
+        margin: 0;
+        padding: 0;
+        text-align: left;
+        vertical-align: middle;
+        border-bottom: 1px solid #CCCCCC;
+        float: left;
+        width: 201px;
+    }
+
+        .myAccountNav ul li a, .myAccountNav ul li a:link, .myAccountNav ul li a:visited {
+            color: #5C5C5C;
+            font-weight: bold;
+            font-family: Arial;
+            font-size: 1.1em;
+            padding-left: 11px;
+            float: left;
+            text-decoration: none;
+            width: 188px;
+        }
+
+            .myAccountNav ul li a:hover {
+                background: url("../images/button-generic-tile.jpg") repeat scroll 0 0 transparent;
+                color: #FFF;
+                width: 190px;
+            }
+
+            .myAccountNav ul li a.active, #myAccountNavWrap .myAccountNav ul li a.active {
+                background: url("../images/bg-tile-header.jpg") repeat scroll 0 0 #51A8DF;
+                cursor: default;
+                color: #FFF;
+                width: 190px;
+            }
+
+            .myAccountNav ul li a.active, #myAccountNavWrap1 .myAccountNav ul li a.active {
+                background: url("../images/bg-tile-header.jpg") repeat scroll 0 0 #51A8DF;
+                cursor: default;
+                color: #FFF;
+                width: 190px;
+            }
+/*myAccountNav ends*/
+#myAccountWrap, #myAccountNarrowWrap, #signInWrap, #checkOutWrap {
+    width: 793px;
+    float: left;
+}
+
+#myAccountNarrowWrap {
+    width: 586px;
+    margin-right: 6px;
+}
+
+#signInWrap {
+    width: 1000px;
+    height: auto;
+    margin: 0 0 6px 0;
+}
+
+#checkOutWrap {
+    width: 1000px;
+    height: auto;
+}
+
+.myAccount, .myAccountNarrow, .signIn, .forgotPassword {
+    float: left;
+    width: 100%;
+    padding-bottom: 10px;
+    background: #FFF;
+    overflow: hidden;
+}
+
+.signIn {
+    padding-bottom: 10px;
+    height: 540px !important;
+}
+
+    .myAccount h2, .myAccountNarrow h2, .signIn h2, .forgotPassword h2 {
+        color: #0099CC;
+        font-family: Arial;
+        font-size: 1.8em;
+        margin: 20px 0 15px 0;
+        padding: 0 0 0 25px;
+        float: left;
+        width: 768px;
+        /*line-height: 1.8em;*/
+        line-height: 1em;
+    }
+
+
+    .signIn h2, .forgotPassword h2 {
+        width: 975px;
+    }
+
+.myAccountNarrow h2 {
+    width: 561px;
+}
+
+.myAccount h3, .myAccountNarrow h3 {
+    background: url("../images/bg-tile-header.jpg") repeat scroll 0 0 transparent;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding-left: 25px;
+    margin: 0;
+    font-family: Arial;
+    color: #FFF;
+    float: left;
+    width: 768px;
+    line-height: 2em;
+    height: 26px;
+    margin-bottom: 15px;
+}
+
+.myAccountNarrow h3 {
+    width: 561px;
+}
+
+    .myAccount h3 span, .myAccountNarrow h3 span {
+        float: left;
+    }
+
+    .myAccount h3 a, .myAccountNarrow h3 a, #myAccountWrap .myAccount h3 a, #myAccountWrap .myAccountNarrow h3 a {
+        float: right;
+        margin-right: 45px;
+        font-size: 0.917em;
+        line-height: 2.2em;
+        color: #FFF;
+    }
+
+.myAccount #myAccountContentWrap, .myAccountNarrow #myAccountContentWrap, .signIn #returningCustomerWrap, .signIn #newCustomerWrap, .signIn .promotionSpace, .myAccount #orderSearchWrap, .forgotPassword #resetPasswordWrap {
+    border: 1px solid #CCC;
+    float: left;
+    width: 771px;
+    margin: 0px 10px 15px 10px;
+    display: inline;
+    overflow: hidden;
+}
+
+.signIn .promotionSpace {
+    border: none;
+}
+
+.forgotPassword #resetPasswordWrap {
+    width: 978px;
+}
+
+.myAccount #orderSearchWrap {
+    margin-bottom: 5px;
+}
+
+.myAccountNarrow #myAccountContentWrap {
+    width: 565px;
+}
+
+.signIn #returningCustomerWrap, .signIn .promotionSpace {
+    width: 338px;
+    margin-left: 320px;
+}
+
+.signIn .promotionSpace {
+    width: 340px;
+}
+
+    .signIn .promotionSpace a {
+        float: left;
+        text-decoration: none;
+    }
+
+.signIn #newCustomerWrap {
+    width: 450px;
+    float: right;
+    margin-right: 85px;
+}
+/*myAccountWrap ends*/
+
+h4.myAccountSubHeader, h4.signInSubHeader {
+    background: url("../images/bg-tile-header.jpg") repeat scroll 0 0 transparent;
+    background-color: #51A8DF;
+    color: #FFF;
+    float: left;
+    clear: both;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: 0;
+    height: 25px;
+    padding-left: 25px;
+    display: inline;
+    position: relative;
+}
+
+.myAccountNarrow h4.myAccountSubHeader {
+    width: 540px;
+}
+
+.signIn h4.signInSubHeader {
+    width: 425px;
+}
+
+.signIn #returningCustomerWrap h4.signInSubHeader {
+    width: 313px;
+}
+
+.myAccountSubHeader span, h4.signInSubHeader span {
+    float: left;
+    margin: 7px 0 0px 0;
+    display: inline;
+}
+
+    .myAccountSubHeader span.edit {
+        float: right;
+        margin-right: 50px;
+        display: inline;
+    }
+
+        .myAccountSubHeader span.edit a {
+            margin: 0;
+            padding: 0;
+            color: #FFF;
+            line-height: 1.1em;
+        }
+
+.myAccountSubHeader .collapsibleArrowClose {
+    cursor: pointer;
+    background: url("../images/col-arrow-open.jpg") no-repeat scroll 0 0 transparent;
+    display: none;
+    float: right;
+    height: 25px;
+    margin: 0px;
+    position: absolute;
+    width: 24px;
+    right: 0px;
+}
+
+.myAccountSubHeader .collapsibleArrowOpen {
+    cursor: pointer;
+    background: url("../images/col-arrow-closed.jpg") no-repeat scroll 0 0 transparent;
+    display: inline;
+    float: right;
+    height: 25px;
+    margin: 0px;
+    position: absolute;
+    width: 24px;
+    right: 0px;
+}
+
+.myAccountContent, .signInContent, .forgotPasswordContent {
+    display: inline;
+    float: left;
+    /*padding:5px 15px 15px 15px; revertback*/
+    padding: 5px 0 15px 0;
+    clear: both;
+}
+
+.myAccountNarrow .myAccountContent {
+    width: 565px;
+}
+
+.signInContent {
+    width: 450px;
+}
+
+.signIn #returningCustomerWrap .signInContent {
+    width: 338px;
+}
+
+.forgotPasswordContent {
+    width: 100%;
+}
+
+.signInContent form fieldset {
+    width: 396px;
+}
+
+.signIn #returningCustomerWrap .signInContent form fieldset {
+    width: 286px;
+    margin: 5px 0 5px 25px;
+}
+
+.forgotPasswordContent form fieldset {
+    width: 928px;
+}
+
+.myAccountEdit {
+    float: left;
+    clear: both;
+    width: 100%;
+}
+
+.myAccountView {
+    display: block;
+    clear: both;
+    float: left;
+    width: 535px;
+    font-family: Arial;
+    padding: 0 15px 0 15px; /*delete revertback*/
+}
+
+    .myAccountView > div {
+        clear: none;
+        float: left;
+        margin: 5px 10px 5px 10px;
+        overflow: hidden;
+        width: 530px;
+    }
+
+.myAccountContent p, .signInContent p, .forgotPasswordContent p {
+    font-family: Arial;
+    font-size: 1.1em;
+    text-align: left;
+    overflow: hidden;
+    line-height: 1.1em;
+    display: inline;
+    float: left;
+    padding: 2px;
+}
+
+.myAccountView span a {
+    font-size: 1.1em;
+}
+
+.myAccount .para {
+    margin: 0 0 15px 25px;
+    font-size: 1.1em;
+    line-height: 1.1em;
+}
+
+#genPrefEdit, #payPrefEdit, #shipPrefEdit, #shopPrefSubscribed, #signInEdit, #personalEdit, #subscription, #auditorDetails {
+    display: none;
+}
+
+.myAccountContent label.sendInfoLabel {
+    width: 490px;
+    margin-right: 0;
+    text-align: left;
+}
+
+form.editForm fieldset {
+    width: 396px;
+}
+
+form fieldset.fieldsetWide {
+    width: 515px;
+}
+
+form#addNewCard fieldset .calendar img, form#addNewCardNoSavedAddress fieldset .calendar img, form#addNewGiftList fieldset .calendar img, form#register fieldset .calendar img {
+    padding: 2px 0;
+    margin: 0 0 0 4px;
+}
+
+.myAccount form h3, .myAccountNarrow form h3 {
+    width: 746px;
+    /*margin-bottom:10px;*/
+    margin-bottom: 0;
+    margin-top: 5px;
+    color: #5C5C5C;
+    background: none;
+    height: 14px;
+    line-height: 1.2em;
+}
+/*My Account - June 8 ,2010 ends*/
+
+
+
+/* Form Structure */
+form {
+    float: left;
+    overflow: hidden;
+    display: inline;
+    width: 100%;
+    font-family: Arial;
+}
+
+fieldset {
+    /*margin:5px 10px 5px 10px; revertback*/
+    margin: 5px 25px 5px 25px;
+    width: 700px;
+    display: inline;
+    float: left;
+}
+
+    fieldset a {
+        font-size: 1.1em;
+    }
+
+    fieldset > div {
+        clear: none;
+        margin: 5px 0 5px 0;
+        overflow: hidden;
+        float: left;
+        width: 100%;
+    }
+
+    fieldset > #makerdiv div {
+        overflow: hidden;
+        float: left;
+        margin: 5px 0 5px 5px;
+    }
+
+    fieldset label, span.label { /*Use .label class for non-form label-like elements*/
+        float: left;
+        font-size: 1.1em;
+        text-align: right;
+        overflow: hidden;
+        position: relative;
+        padding: 4px 2px;
+        width: 120px;
+        margin-right: 10px;
+    }
+
+    fieldset input[type=text], fieldset input[type=password], fieldset textarea {
+        float: left;
+        font-size: 1.1em;
+        width: 190px;
+        height: 18px;
+        padding: 0 0 0 2px;
+        position: relative;
+        color: #5C5C5C;
+        font-family: Arial;
+    }
+
+    fieldset textarea {
+        height: auto;
+    }
+
+    fieldset select {
+        float: left;
+        font-size: 1.1em;
+        width: 196px;
+        height: 20px;
+        padding: 0;
+        position: relative;
+        color: #5C5C5C;
+        font-family: Arial;
+    }
+
+    fieldset input[type=radio] {
+        float: left;
+        position: relative;
+        margin-left: 0;
+    }
+
+    fieldset input[type=checkbox] {
+        float: left;
+        position: relative;
+        margin-left: 0;
+    }
+
+    fieldset .buttonBlock, .buttonBlock, .buttonBlock1, fieldset .checkBlock, .checkBlock {
+        margin: 0 0 10px 300px;
+        float: left;
+        clear: both;
+        display: inline;
+        width: auto;
+    }
+
+    fieldset .buttonBlock1, .buttonBlock1 {
+        margin: 0 0 0 250px;
+        float: left;
+        clear: both;
+        display: block;
+        width: auto;
+    }
+
+    fieldset .checkBlock label, fieldset .checkBlock span.label, .checkBlock label, .checkBlock span.label {
+        text-align: left;
+    }
+
+    fieldset input[type=button], fieldset input[type=submit], .myAccountContent input[type=button], .myAccountContent input[type=submit], .orderSearch input[type=button], .orderSearch input[type=submit], #creditCards input[type=button], #creditCards input[type=submit], #addressBook input[type=button], #addressBook input[type=submit] {
+        background: url("../images/button-generic-tile.jpg") repeat-x scroll 0 0 transparent;
+        border: medium none;
+        color: #FFF;
+        font-weight: bold;
+        float: left;
+        font-size: 1.1em;
+        width: 96px;
+        height: 20px;
+        padding: 2px;
+        margin-right: 4px;
+        position: relative;
+        display: inline;
+        padding: 0 4px 2px 4px;
+        font-family: Arial;
+    }
+/*added for uniform buttons in application LFAR*/
+      input[type=button], input[type=submit] {
+        background: url("../images/button-generic-tile.jpg") repeat-x scroll 0 0 transparent;
+        border: medium none;
+        color: #FFF;
+        font-weight: bold;
+        float: left;
+        font-size: 1.1em;
+        width: 96px;
+        height: 20px;
+        padding: 2px;
+        margin-right: 4px;
+        position: relative;
+        display: inline;
+        padding: 0 4px 2px 4px;
+        font-family: Arial;
+    }
+
+        fieldset .autoWidth, fieldset input[type=button].autoWidth, fieldset input[type=submit].autoWidth {
+            margin-right: 10px;
+            width: auto;
+        }
+
+.formDemarcation {
+    border-top: 1px solid #CCCCCC;
+    padding-top: 10px;
+}
+
+form .info, form .note, form span.errorField {
+    float: left;
+    clear: both;
+    line-height: 1.1em;
+    padding: 2px;
+}
+
+form .note {
+    font-size: 1.1em;
+}
+
+form fieldset .info, form fieldset .note, form fieldset span.errorField {
+    margin: 0 0 0 180px;
+    width: 192px;
+}
+
+span.errorField {
+    color: #F00;
+}
+
+.infoIcon {
+    padding: 2px 0;
+    margin-left: 4px;
+}
+
+.mandatory {
+    color: #F00;
+}
+
+.spacingLeft {
+    margin-left: 4px;
+}
+
+/* Form Structure ends */
+/*Jquery UI*/
+.calendar input[type="text"] {
+    margin-right: 2px;
+}
+
+#ui-datepicker-div {
+    z-index: 1003;
+}
+/*Jquery UI ends*/
+
+
+.orderSearch {
+    padding: 7px 15px 7px 15px;
+    float: left;
+    display: block;
+}
+
+
+    .orderSearch form img {
+        padding: 3px 0 0 0;
+        margin: 0 0 0 5px;
+        float: left;
+        display: inline;
+    }
+
+        .orderSearch form img.infoIcon {
+            margin-right: 10px;
+        }
+
+    .orderSearch form div {
+        float: left;
+        display: inline;
+        width: 700px;
+        margin-bottom: 10px;
+    }
+
+        .orderSearch form div label {
+            float: left;
+            height: 18px;
+            padding: 4px 0px 0px 0px;
+            font-size: 1.2em;
+            font-weight: bold;
+            margin: 0px 10px 0px 0px;
+            display: inline;
+            width: 87px;
+            text-align: right;
+            font-family: arial;
+        }
+
+            .orderSearch form div label#todateLabel {
+                margin-left: 10px;
+            }
+
+        .orderSearch form div input[type="text"] {
+            width: 120px;
+            float: left;
+            height: 18px;
+            display: inline;
+            color: #5C5C5C;
+            padding: 0 0 0 2px;
+            font-size: 1.1em;
+            font-family: Arial;
+        }
+
+        .orderSearch form div select {
+            width: 120px;
+            display: inline;
+            float: left;
+            padding: 0px;
+            margin: 0px;
+            color: #5C5C5C;
+            padding: 0 0 0 2px;
+            font-size: 1.1em;
+            font-family: Arial;
+        }
+
+
+.profileInformation {
+    float: left;
+    display: inline;
+}
+
+    .profileInformation fieldset {
+        margin: 2px 0px 10px 15px;
+    }
+
+    .profileInformation form fieldset div {
+        margin-bottom: 10px;
+        float: left;
+        display: inline;
+        width: 400px;
+    }
+
+    .profileInformation fieldset div label {
+        width: 192px;
+        float: left;
+        height: 18px;
+        padding-right: 0px;
+        margin-right: 0px;
+        font-family: verdana;
+        font-size: 1.2em;
+        padding-top: 3px;
+    }
+
+    .profileInformation fieldset div select {
+        width: 195px;
+        float: left;
+        display: inline;
+        padding-right: 0px;
+        background-color: #fff;
+    }
+
+    .profileInformation fieldset div input[type="text"] {
+        width: 192px;
+        height: 18px;
+    }
+
+.profileDescription {
+    margin: 0px 0px 20px 0px;
+}
+
+    .profileDescription p {
+        font-size: 12px;
+        line-height: 1.4em;
+    }
+
+.editInfo {
+    background-color: #EFEAE7;
+}
+
+#myFavouritesList {
+    float: left;
+    display: inline;
+    padding: 10px 0;
+}
+
+    #myFavouritesList form h4 {
+        float: left;
+        display: inline;
+        color: #5096aa;
+        padding: 0px;
+        margin: 0px;
+    }
+
+#availableGiftList {
+    padding: 15px;
+    float: left;
+    display: inline;
+    width: 741px;
+}
+
+    #availableGiftList form input {
+        float: right;
+    }
+
+#myFavouritesList table, #myGiftList table {
+    color: #686873;
+    width: 100%;
+    border-collapse: collapse;
+    border: none;
+    border-spacing: 0;
+}
+
+    #myFavouritesList table tbody tr td, #myGiftList table tbody tr td {
+        border-top: 1px solid #ccc;
+        padding: 15px 0 10px 15px;
+    }
+
+        #myFavouritesList table tbody tr td a {
+            line-height: 1.1em;
+        }
+
+    #myFavouritesList table tbody tr.firstchild, #myGiftList table tbody tr.firstchild {
+        border: none;
+    }
+
+    #myFavouritesList table th, #myGiftList table th {
+        /*border-bottom:1px solid #489AC2;*/
+        border-bottom: 1px solid #ccc;
+        padding: 0px 5px 0px 15px;
+        border-right: none;
+        text-align: left;
+        font-size: 1.2em;
+        color: #fff;
+        font-family: Arial,Helvetica,sans-serif;
+        background: url(../images/bg-tile-header.jpg);
+        vertical-align: middle;
+        line-height: 2em;
+    }
+
+
+        #myFavouritesList table th a {
+            display: inline;
+            float: left;
+            padding: 0px;
+            margin: 0px;
+            color: #fff;
+            text-decoration: none;
+            line-height: 2.0em;
+            position: relative;
+            padding-right: 24px;
+        }
+
+            #myFavouritesList table th a span {
+                background: url(../images/col-arrow-open.jpg);
+                position: absolute;
+                right: 0px;
+                top: 0px;
+                background-repeat: no-repeat;
+                height: 2em;
+                width: 24px;
+            }
+
+                #myFavouritesList table th a span.headerSort {
+                    background: url(../images/col-arrow-up.jpg);
+                }
+
+
+        #myFavouritesList table th.orderedItems {
+            padding-left: 30px;
+            width: 230px;
+        }
+
+        #myFavouritesList table th.item, #myGiftList table th.item {
+            width: 200px;
+        }
+
+        #myFavouritesList table th.name {
+            width: 150px;
+        }
+
+        #myFavouritesList table th.price, #myGiftList table th.price {
+            width: 150px;
+            padding-left: 40px;
+        }
+
+        #myFavouritesList table th.quantity {
+            width: 100px;
+            padding-left: 20px;
+        }
+
+        #myFavouritesList table th.remain {
+            width: 100px;
+            padding-left: 20px;
+        }
+
+
+
+    #myFavouritesList table td.image, #myGiftList table td.image {
+        width: 200px;
+        border-collapse: collapse;
+        border: none;
+        border-top: solid 1px #ccc;
+        vertical-align: middle;
+    }
+
+    #myFavouritesList table td.orderedItemPics, #myFavouritesList table.smallWidth td.orderedItemPics {
+        border-left: 1px solid #ccc;
+        padding: 0px;
+        width: 230px;
+    }
+
+#orderedItemsDiv {
+    width: 100%;
+    float: left;
+    display: inline;
+    padding-right: 0px;
+}
+
+    #orderedItemsDiv div {
+        width: 100%;
+        float: left;
+        display: inline;
+        border-bottom: 1px solid #ccc;
+        padding: 5px 0px 5px 0px;
+    }
+
+        #orderedItemsDiv div span {
+            float: left;
+            display: inline;
+            margin-left: 5px;
+        }
+
+            #orderedItemsDiv div span.row {
+                margin: 0;
+                float: left;
+                clear: both;
+            }
+
+            #orderedItemsDiv div span h4 {
+                color: #000000;
+                display: inline;
+                float: left;
+                font-size: 1.2em;
+                margin-bottom: 0;
+                margin-top: 5px;
+                padding-bottom: 10px;
+                padding-left: 3px;
+            }
+
+            #orderedItemsDiv div span p.itemName {
+                color: #3a7c95;
+                font-weight: bold;
+                font-size: 1.2em;
+                line-height: 1.2em;
+                margin-top: 10px;
+            }
+
+            #orderedItemsDiv div span p {
+                color: #000;
+                font-size: 1.2em;
+                line-height: 1.2em;
+                font-weight: bold;
+            }
+
+    #orderedItemsDiv .viewAllItems {
+        width: 100%;
+        float: left;
+        display: inline;
+        height: 25px;
+        padding: 5px 0px 5px 0px;
+        border: none;
+        text-align: right;
+    }
+
+        #orderedItemsDiv .viewAllItems span {
+            float: right;
+            margin-right: 30px;
+        }
+
+            #orderedItemsDiv .viewAllItems span a {
+                font-size: 1.1em;
+                font-weight: bold;
+                font-family: arial;
+                margin-top: 5px;
+                float: left;
+                display: inline;
+            }
+
+
+
+#myFavouritesList table td {
+    vertical-align: top;
+    border: none;
+    width: 235px;
+    padding-top: 15px;
+    text-align: left;
+    border-collapse: collapse;
+    padding: 15px 5px 20px 15px;
+}
+
+    #myFavouritesList table td.tableFont {
+        font-size: 1.2em;
+    }
+
+#myFavouritesList table.smallWidth td {
+    width: 123px;
+}
+
+#myFavouritesList table td p {
+    line-height: 1.4em;
+}
+
+    #myFavouritesList table td p.prodName {
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+
+
+#myFavouritesList table td del.oldPrice {
+    text-decoration: line-through;
+}
+
+#myFavouritesList table td span.newPrice {
+    text-decoration: none;
+    color: #333;
+}
+
+#myFavouritesList table td.numericalPrice {
+    width: 80px;
+}
+
+#myFavouritesList table td.favouritePrice {
+    width: 150px;
+    padding-left: 40px;
+}
+
+#myFavouritesList table td.remain {
+    width: 80px;
+    padding-left: 20px;
+    text-align: center;
+}
+
+
+#myFavouritesList table td.favouriteActions {
+    text-align: right;
+    padding: 15px 20px 20px 0;
+}
+
+#myFavouritesList table td.reqstd {
+    width: 240px;
+}
+
+    #myFavouritesList table td.reqstd input {
+        width: 45px;
+        height: 18px;
+        border: 1px solid #489AC2;
+        padding: 1px 0px 1px 5px;
+    }
+
+#myFavouritesList table td.viewProduct {
+    text-align: right;
+    padding: 16px 8px;
+}
+
+#myFavouritesList table td.favouriteActions .favouriteAdd {
+    margin-bottom: 10px;
+    color: #F33;
+    display: inline;
+    float: right;
+    width: 100px;
+}
+
+    #myFavouritesList table td.favouriteActions .favouriteAdd input {
+        float: right;
+        display: inline;
+        margin-bottom: 10px;
+    }
+
+#myFavouritesList .continueShopping {
+    text-align: right;
+    PADDING: 5PX 20px 5px 0px;
+    border-top: 1px solid #ccc;
+    float: right;
+    width: 751px;
+}
+
+
+#myFavouritesList table td.orderDate {
+    font-weight: bold;
+    cellspacing: 150px;
+    font-size: 1.2em;
+    color: #666;
+    font-family: Arial,Helvetica,sans-serif;
+    padding: 16px 15px;
+    height: 28px;
+    vertical-align: top;
+}
+
+    #myFavouritesList table td.orderDate a {
+        font-weight: bold;
+    }
+
+#myFavouritesList table td a {
+    font-size: 1em;
+    font-weight: normal;
+    line-height: 1em;
+    text-decoration: none;
+}
+
+    #myFavouritesList table td a:hover {
+        text-decoration: underline;
+        color: #5096aa;
+    }
+
+#myFavouritesList table td.orderTotal {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #666;
+    font-family: Arial,Helvetica,sans-serif;
+    padding: 16px 15px;
+    height: 28px;
+}
+
+.orderTotal .orderCancellation {
+    float: left;
+    display: inline;
+    margin-top: 15px;
+}
+
+.orderCancellation a {
+    float: left;
+    display: inline;
+    font-weight: bold !important;
+}
+
+
+.sortArrow {
+    background-image: url(../images/col-arrow-open.jpg);
+}
+
+.genericButton {
+    background: url("../images/button-generic-tile.jpg") repeat-x scroll 0 0 transparent;
+    border: medium none;
+    color: #F1F1F1;
+    font-family: Arial;
+    font-size: 11px;
+    font-weight: bold;
+    height: 25px;
+    padding-bottom: 4px;
+}
+/*------------ORDER ENDS--------------------------*/
+
+/*-----------My Payments-----SAURABH--Davinder's------------------*/
+#Reply, #Reply1, #Reply2, #Reply3, #Reply4, #Reply5, #creditCards #addressBook {
+    padding: 0;
+    float: left;
+    display: inline;
+}
+
+.Reply, .Reply1, .Reply2, .Reply3, .Reply4, .Reply5 {
+    padding: 0;
+    float: left;
+    display: inline;
+}
+
+#Reply #default, #creditCards #defaultCard, #creditCards #otherCards, #addressBook #defaultAddress, #addressBook #otherAddresses {
+    float: left;
+    display: inline;
+    width: 771px;
+}
+
+#Reply1 #default1, #Reply2 #default2, #Reply3 #default3, #Reply4 #default4, #Reply5 #default5 {
+    float: left;
+    display: none;
+    width: 771px;
+}
+
+.Reply1 .default1, .Reply2 .default2, .Reply3 .default3, .Reply4 .default4, .Reply5 .default5 {
+    float: left;
+    display: none;
+    width: 771px;
+}
+
+#creditCards #defaultCard, #addressBook #defaultAddress {
+    background-color: #F2F0D6;
+}
+
+#Reply h4, #Reply1 h4, #Reply2 h4, #Reply3 h4, #Reply4 h4, #Reply5 h4, #creditCards h4, #addressBook h4 {
+    margin: 0px;
+    padding-left: 15px;
+    background: url("../images/bg-tile-header.jpg") repeat scroll 0 0 transparent;
+    color: #FFFFFF;
+    font-family: Arial;
+    font-size: 1.2em;
+    line-height: 2em;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.Reply h4, .Reply1 h4, .Reply2 h4, .Reply3 h4, .Reply4 h4, .Reply5 h4 {
+    margin: 0px;
+    padding-left: 15px;
+    background: url("../images/bg-tile-header.jpg") repeat scroll 0 0 transparent;
+    color: #FFFFFF;
+    font-family: Arial;
+    font-size: 1.2em;
+    line-height: 2em;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.cardDetails, .cardAddress, .addressInfo, .addressDesc, .functionButtons {
+    width: 320px;
+    float: left;
+    display: inline;
+}
+
+.cardDetails, .addressInfo {
+    width: 260px;
+}
+
+.cardAddress, .addressDesc {
+    width: 370px;
+}
+
+.functionButtons {
+    width: 100px;
+}
+
+    .functionButtons input {
+        margin-bottom: 6px;
+    }
+
+.cardAddress span, .addressDesc span {
+    display: block;
+}
+
+#creditCards span, #addressBook span {
+    font-size: 1.1em;
+    font-family: Arial;
+    color: #5c5c5c;
+    margin-bottom: 10px;
+}
+
+#creditCards .required, #addressBook .required {
+    width: 74px;
+    float: left;
+    display: inline;
+    clear: left;
+    text-align: right;
+    padding: 0 2px;
+}
+
+#creditCards .required {
+    width: 70px;
+}
+
+#creditCards .cardAddress .required {
+    width: 100px;
+}
+
+#addressBook .addressDesc .required {
+    width: 44px;
+}
+
+#creditCards .provided, #addressBook .provided, #creditCards .providedLineExtra, #addressBook .providedLineExtra, #creditCards .providedNickName, #addressBook .providedNickName {
+    width: 190px;
+    float: left;
+    display: inline;
+    padding: 0 2px;
+    margin-left: 10px;
+}
+
+#creditCards .provided, #addressBook .provided, #creditCards .providedLineExtra, #addressBook .providedLineExtra, #creditCards .providedNickName, #addressBook .providedNickName {
+    width: 150px;
+}
+
+#creditCards .cardAddress .provided, #addressBook .addressDesc .provided, #creditCards .cardAddress .providedLineExtra, #addressBook .addressDesc .providedLineExtra {
+    width: 220px;
+}
+
+#addressBook .addressDesc .providedLineExtra {
+    margin-left: 58px;
+}
+
+#creditCards .cardAddress .providedLineExtra {
+    margin-left: 114px;
+}
+
+#creditCards .providedNickName, #addressBook .providedNickName {
+    font-weight: bold;
+}
+
+.cardDiv, .addressDiv {
+    float: left;
+    display: inline;
+    padding: 15px 15px 5px 15px;
+    width: 741px;
+    border-top: 1px solid #ccc;
+}
+
+    .cardDiv.firstChild, .addressDiv.firstChild {
+        border: none;
+    }
+
+#creditCards .cardDiv .disabledButton, #addressBook .addressDiv .disabledButton {
+    background: url("../images/btn-diabled.jpg") repeat-x scroll 0 0 transparent;
+    cursor: default;
+}
+
+
+/*------------My Payments Ends-----------------------------------*/
+
+
+
+/*--------------VIEW ORDERS SAURABH-------------------------*/
+
+
+.myAccountHead {
+    float: left;
+    width: 100%;
+    display: inline;
+    line-height: 1.8em;
+    margin: 10px 0 5px 0;
+}
+
+    .myAccountHead h2 {
+        margin: 0;
+        width: auto;
+    }
+
+    .myAccountHead span {
+        float: right;
+        margin-right: 15px;
+        padding: 5px 0;
+        width: auto;
+        font-size: 1.1em;
+    }
+
+.myAccount #paginationWrap {
+    width: 793px;
+    margin-bottom: 6px;
+}
+
+#paginationWrap {
+    float: left;
+    width: 586px;
+    overflow: hidden;
+}
+
+#paginationWrap {
+    margin-top: 8px;
+}
+
+    #paginationWrap .perPage, #paginationWrap .currentPage {
+        display: inline;
+        float: left;
+        height: 21px;
+        margin-left: 12px;
+        margin-top: 2px;
+    }
+
+    #paginationWrap .currentPage {
+        font-size: 1.2em;
+        line-height: 1.5em;
+        margin-left: 24px;
+    }
+
+.perPage label {
+    color: #3A7C95;
+    float: left;
+    font-size: 1.2em;
+    margin: 3px 0 0;
+    width: 50px;
+}
+
+/* Pagination */
+
+.pagination {
+    display: inline;
+    float: right;
+    list-style: none;
+    margin: 4px 5px 4px 2px;
+    overflow: hidden;
+    width: auto;
+}
+
+    .pagination li {
+        float: left;
+        margin: 0 4px 0 0;
+        overflow: hidden;
+        padding: 0 1px;
+        width: auto;
+    }
+
+        .pagination li span {
+            font-size: 1.2em;
+            line-height: 1.5em;
+        }
+
+    .pagination a {
+        float: left;
+        font-size: 1.2em;
+        line-height: 1.5em;
+        text-decoration: none;
+        margin-right: 3px;
+    }
+
+        .pagination a.active {
+            cursor: default;
+            color: #5C5C5C;
+        }
+
+    .pagination img {
+        margin-top: 3px;
+    }
+/*Pagination ends*/
+
+.myOrders {
+    float: left;
+    display: inline;
+}
+
+    .myOrders #myAccountContentWrap {
+        margin-bottom: 0;
+    }
+
+.expiryDateCalendar select {
+    width: 96px;
+    margin-right: 4px;
+}
+
+    .expiryDateCalendar select.lastChild {
+        margin-right: 0;
+    }
+
+.cardNumberBlock .cardNumber, .cardNumberBlock .cardNumberLastChild {
+    width: 42px;
+    margin-right: 4px;
+}
+
+.cardNumberBlock .cardNumberLastChild {
+    margin-right: 0;
+}
+/*------------VIEW ORDERS ENDS-----------------------------------*/
+
+.serverErrorField {
+    border: 1px solid #F00;
+    background-color: #FFC;
+    color: #F00;
+    font-weight: bold;
+    line-height: 1.1em;
+    font-size: 1.1em;
+    margin: 0;
+}
+
+    .serverErrorField span {
+        padding: 4px;
+        float: left;
+    }
+
+span.labelValue { /*Use .label class for non-form label-like elements*/
+    float: left;
+    font-size: 1.1em;
+    text-align: left;
+    overflow: hidden;
+    position: relative;
+    padding: 4px 2px;
+    width: 166px;
+    margin-right: 10px;
+    color: black;
+}
+
+.signIn #returningCustomerWrap .signInContent fieldset label, .signIn #returningCustomerWrap .signInContent span.label {
+    width: 109px;
+}
+
+.signIn #returningCustomerWrap .signInContent fieldset input[type="text"], .signIn #returningCustomerWrap .signInContent input[type="password"] {
+    width: 159px;
+}
+
+.forgotPassword #resetPasswordWrap .forgotPasswordContent fieldset label, .forgotPassword #resetPasswordWrap .forgotPasswordContent span.label {
+    width: 102px;
+}
+
+.signIn #returningCustomerWrap .signInContent .info, .signIn #returningCustomerWrap .signInContent .checkBlock, .signIn #returningCustomerWrap .signInContent .buttonBlock, .signIn #returningCustomerWrap .signInContent .note, .signIn #returningCustomerWrap .signInContent form fieldset .info, .signIn #returningCustomerWrap .signInContent form fieldset .note, .signIn #returningCustomerWrap .signInContent form fieldset span.errorField {
+    margin: 0 0 0 119px;
+}
+
+.forgotPassword #resetPasswordWrap .forgotPasswordContent fieldset .buttonBlock, .forgotPassword #resetPasswordWrap .forgotPasswordContent fieldset .note {
+    margin: 0 0 0 115px;
+}
+
+.forgotPasswordContent form div span {
+    width: auto;
+}
+
+fieldset .paragraph {
+    margin: 0;
+}
+
+#catalogMainWrap .carouselWrap .scrollable .items .item img.offer {
+    display: block;
+    float: left;
+    height: 60px;
+    position: absolute;
+    right: 1px;
+    top: 18px;
+    width: 60px;
+}
+
+.myAccountNarrow #banner {
+    height: 102px;
+    width: 565px;
+    float: left;
+    margin: 0 10px 10px 10px;
+    display: inline;
+}
+
+    .myAccountNarrow #banner a {
+        float: left;
+    }
+
+    .myAccountNarrow #banner img {
+        height: 102px;
+        width: 565px;
+    }
+
+.confirmationNote {
+    margin: 10px 25px 0 25px;
+}
+
+.myAccount .print {
+    float: right;
+    clear: both;
+    margin: 10px 20px 0 0;
+}
+
+    .myAccount .print a {
+        font-size: 1.1em;
+        float: left;
+        font-family: Arial;
+    }
+
+/*------------SHOPPING CART SAURABH-------------------------------*/
+
+#shoppingCartWrap {
+    width: 100%;
+    background-color: #fff;
+    float: left;
+    display: inline;
+}
+
+.shoppingCart {
+    width: 100%;
+    display: inline;
+    float: left;
+    background-color: #fff;
+    padding-bottom: 10px;
+}
+
+#cartHeader {
+    margin: 20px 0 10px;
+    padding: 0 0 0 25px;
+    float: left;
+    display: inline;
+    width: 975px;
+}
+
+.shoppingCart h2 {
+    color: #0099CC;
+    float: left;
+    font-family: Verdana;
+    font-size: 1.8em;
+    line-height: 1.8em;
+    display: inline;
+    margin: 0px;
+}
+
+#cartHeader .shoppedItemCount {
+    color: #5C5C5C;
+    float: left;
+    font-size: 1.8em;
+    font-weight: bold;
+    padding-left: 20px;
+    line-height: 1.7em;
+}
+
+#cartHeader .cartLevelPromotion {
+    background-color: #E8F7FF;
+    display: inline;
+    float: left;
+    font-size: 1.1em;
+    font-weight: bold;
+    height: 20px;
+    line-height: 1.4em;
+    margin-left: 0;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    width: 938px;
+    padding-left: 10px;
+}
+
+.printmail {
+    float: right;
+    display: inline;
+    width: 100px;
+    vertical-align: top;
+    padding-top: 7px;
+    margin-right: 30px;
+}
+
+    .printmail a img, .printmail a {
+        float: right;
+        display: inline;
+        padding-left: 5px;
+    }
+
+#shoppingCartInfo {
+    float: left;
+    display: inline;
+    border: 1px solid #ccc;
+    margin: 0px 25px 20px 25px;
+    width: 948px;
+}
+
+#cartItemActions {
+    float: left;
+    display: inline;
+    width: 918px;
+    padding: 15px 15px 10px 15px;
+}
+
+    #cartItemActions #actionButtons {
+        float: left;
+        display: inline;
+        width: 100%;
+    }
+
+        #cartItemActions #actionButtons a {
+            clear: both;
+            display: inline;
+            float: left;
+            line-height: 1.2em;
+            margin-right: 10px;
+            margin-top: 6px;
+        }
+
+        #cartItemActions #actionButtons input {
+            float: left;
+            display: inline;
+            margin-right: 10px;
+            margin-top: 22px;
+            margin-left: 0px;
+        }
+
+
+        #cartItemActions #actionButtons .bigCheck, #moreActions .bigCheck {
+            display: inline;
+            float: right;
+            margin-top: 4px;
+            vertical-align: top;
+            width: 134px;
+            background: url("../images/check-out.jpg") repeat-x scroll 0 0 transparent;
+            height: 47px;
+            margin-left: 15px;
+            font-size: 1.6em;
+            font-family: arial;
+        }
+
+#moreActions .expressCheckout {
+    float: right;
+}
+
+#cartItemActions h4 {
+    float: left;
+    display: inline;
+    padding: 0px 0px 0px 3px;
+    margin: 0px;
+    font-size: 1.2em;
+    color: #5C5C5C;
+    width: 905px;
+    margin-bottom: 0px;
+}
+
+#itemInformation {
+    float: left;
+    display: inline;
+    width: 948px;
+}
+
+.viewOrdersSection #itemInformation {
+    width: 771px;
+}
+
+.cartTable {
+    width: 948px;
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+
+    .cartTable td {
+        border-collapse: collapse;
+        border: medium none;
+        padding: 0px;
+        margin: 0px;
+        padding-bottom: 10px;
+    }
+
+
+        .cartTable td.checkItem {
+            border-collapse: collapse;
+            border: medium none;
+            width: 35px;
+            border-top: 1px solid #ccc;
+            border-right: 1px solid #ccc;
+            vertical-align: middle;
+        }
+
+        .cartTable td.dealProdCheck3, .cartTable td.dealProdCheck2 {
+            border-top: none;
+        }
+
+        .cartTable td.dealProdCheck1 {
+            border-top: 1px solid #ccc;
+        }
+
+
+        .cartTable td.dealHeader, .cartTable td.dealCheck {
+            vertical-align: middle;
+            padding-top: 10px !important;
+            padding-bottom: 10px;
+        }
+
+            .cartTable td.dealHeader, .cartTable td.dealCheck div {
+                margin: 0px;
+                padding-top: 0px;
+                padding-bottom: 0px;
+            }
+
+        .cartTable td.dealHeader {
+            padding-left: 30px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+
+            .cartTable td.dealHeader div {
+                width: 200px;
+                float: left;
+            }
+
+            .cartTable td.dealHeader span {
+                float: left;
+                display: inline;
+                font-size: 1.2em;
+                padding-top: 3px;
+                margin-left: 5px;
+            }
+
+            .cartTable td.dealHeader label {
+                padding: 0px;
+                margin: 0px;
+                color: #5C5C5C;
+                font-weight: normal;
+                font-size: 1.8em;
+                float: left;
+                display: inline;
+            }
+
+
+            .cartTable td.dealHeader a {
+                float: right;
+                padding-right: 20px;
+                font-size: 1.1em;
+                font-weight: bold;
+            }
+
+
+.checkItem div {
+    padding-left: 7px;
+}
+
+
+.cartTable td.features {
+    border-collapse: collapse;
+    border: medium none;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    width: 656px;
+    padding-right: 20px;
+}
+
+    .cartTable td.features .image {
+        display: inline;
+        float: left;
+        padding-left: 20px;
+        width: 100px;
+        text-align: center;
+    }
+
+    .cartTable td.features .planImage {
+        padding-top: 15px;
+    }
+
+
+    .cartTable td.features .phoneInfo {
+        width: 530px;
+        padding-top: 20px;
+        float: left;
+        display: inline;
+    }
+
+
+        .cartTable td.features .phoneInfo .promotionalDiscount, .cartTable td.features .phoneInfo .promotionalMessage {
+            float: left;
+            display: inline;
+            width: 530px;
+            border: 1px solid #ccc;
+            background-color: #FFFFCC;
+            height: 26px;
+        }
+
+            .cartTable td.features .phoneInfo .promotionalDiscount p, .cartTable td.features .phoneInfo .promotionalMessage p {
+                margin-bottom: 0px;
+            }
+
+        .cartTable td.features .phoneInfo .promotionalMessage {
+            margin-bottom: 10px;
+            background-color: #E8F7FF;
+        }
+
+.promotionalDiscount p, .promotionalMessage p {
+    font-size: 1.2em;
+    font-family: arial;
+    color: #0099CC;
+    font-weight: bold;
+    padding-left: 10px;
+    float: left;
+    display: inline;
+    padding-top: 7px;
+}
+
+
+.promotionalMessage p {
+    color: #5c5c5c;
+}
+
+.promotionalDiscount img, #discountMessage img {
+    float: left;
+    display: inline;
+}
+
+.cartTable td.features .phoneInfo h4 a {
+    color: #0099CC;
+    line-height: 1.0em;
+    text-decoration: none;
+    font-weight: bold;
+    float: left;
+    display: inline;
+}
+
+.viewOrdersSection .cartTable td.features .phoneInfo h4 a {
+    line-height: 1.0em;
+}
+
+.cartTable td.features .phoneInfo h4 {
+    color: #5C5C5C;
+    font-size: 1.4em;
+    font-family: arial;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    font-weight: normal;
+    float: left;
+    display: inline;
+    width: 100%;
+}
+
+
+
+
+
+.cartTable td.features .phoneInfo p {
+    font-size: 1.2em;
+    font-family: arial;
+    margin-bottom: 10px;
+    float: left;
+    display: inline;
+    line-height: 1.2em;
+}
+
+.phoneInfo h4 a .productName {
+    color: #0099CC;
+    float: left;
+    display: inline;
+    margin-right: 5px;
+}
+
+.phoneInfo h4 .dateAdded {
+    float: right;
+    display: inline;
+    color: #5C5C5C;
+    font-size: 0.85em;
+    font-family: arial;
+    font-weight: normal;
+}
+
+
+
+.cartTable td.pricing {
+    border-collapse: collapse;
+    border: medium none;
+    border-top: 1px solid #ccc;
+    width: 230px;
+    vertical-align: top;
+    padding: 15px 0px 0px 0px;
+}
+
+    .cartTable td.pricing .pricePerQuantity {
+        float: left;
+        display: inline;
+        width: 210px;
+        padding: 0px 10px 15px 10px;
+    }
+
+        .cartTable td.pricing .pricePerQuantity label {
+            display: inline;
+            float: left;
+            font-size: 1.2em !important;
+            font-weight: normal;
+            height: 10px;
+            margin-left: 3px;
+            padding-top: 2px;
+            text-align: left;
+            width: 40px;
+            padding-left: 10px;
+            height: 14px;
+            border: 1px solid #ccc;
+        }
+
+    .cartTable td.pricing .productActions {
+        float: left;
+        display: inline;
+        width: 210px;
+        border-top: 1px solid #ccc;
+        padding: 0px 10px 0px 10px;
+    }
+
+.productActions .addRemoveWishlist {
+    display: inline;
+    float: left;
+    margin-left: 14px;
+    margin-top: 20px;
+}
+
+    .productActions .addRemoveWishlist a {
+        font-weight: bold;
+        font-size: 1.1em;
+        padding: 0px 5px 0px 5px;
+    }
+
+
+.pricePerQuantity div {
+    display: inline;
+    float: left;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.pricePerQuantity .perUnitPrice {
+    margin-bottom: 0px;
+}
+
+.pricePerQuantity div span.pricePerQty {
+    margin-left: 100px;
+    font-family: arial;
+    font-size: 1.2em;
+}
+
+
+.pricePerQuantity .qtyForLabel {
+    margin-bottom: 5px;
+    height: 19px;
+}
+
+
+
+.pricePerQuantity .priceText {
+    float: left;
+    display: inline;
+    width: 100px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: right;
+    padding-top: 5px;
+    color: #5C5C5C;
+}
+
+/*.pricePerQuantity .dealPriceText{font-size:1.3em;padding-right:0px;width:110px;}*/
+
+.pricePerQuantity .priceNumber {
+    float: left;
+    display: inline;
+    width: 90px;
+    font-weight: bold;
+    font-size: 1.8em;
+    padding-left: 10px;
+    color: #0099CC;
+}
+
+.pricePerQuantity .quantity {
+    float: left;
+    display: inline;
+    width: 100px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: right;
+    padding-top: 5px;
+    color: #5c5c5c;
+}
+
+.pricePerQuantity .quantityNumber {
+    margin-bottom: 5px;
+}
+
+.pricePerQuantity span {
+    float: left;
+    display: inline;
+    padding-top: 3px;
+}
+
+.pricePerQuantity input {
+    width: 35px;
+    height: 12px;
+    float: left;
+    display: inline;
+    font-size: 1.1em !important;
+    margin-left: 3px;
+    text-align: left;
+    padding-left: 5px;
+    font-weight: normal;
+}
+
+.pricePerQuantity img {
+    padding: 1px 0px 3px 3px;
+    float: left;
+    display: inline;
+}
+
+#selectGiftWrapper {
+    width: 100%;
+    height: 30px;
+    border-top: 1px solid #ccc;
+    float: left;
+    display: inline;
+}
+
+    #selectGiftWrapper span {
+        float: left;
+        display: inline;
+        padding-top: 7px;
+    }
+
+    #selectGiftWrapper input {
+        margin-left: 10px;
+    }
+
+    #selectGiftWrapper input, #selectGiftWrapper label {
+        float: left;
+        display: inline;
+    }
+
+
+
+    #selectGiftWrapper label {
+        margin: 0px 0px 0px 15px;
+        font-size: 1.2em;
+        font-weight: bold;
+        color: #5C5C5C;
+        margin-top: 10px;
+    }
+
+#showWrapper {
+    width: 948px;
+    float: left;
+    display: none;
+}
+
+#wrappingOptions {
+    width: 380px;
+    float: left;
+    display: inline;
+    height: 217px;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+#showWrapper .wrapDelivery, #purchaseLevelPromotion, #giftCode .couponInformation {
+    background-color: #E8F7FF;
+    display: inline;
+    float: left;
+    font-size: 1.1em;
+    font-weight: bold;
+    height: 20px;
+    line-height: 1.4em;
+    margin-left: 0;
+    margin-top: 0px;
+    padding-top: 5px;
+    width: 100%;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+#giftCode .couponInformation {
+    border: medium none;
+    font-size: 1em;
+    height: 40px;
+    margin-top: 0px;
+    padding-left: 10px;
+    width: 525px;
+    border-top: none;
+}
+
+#purchaseLevelPromotion {
+    padding-left: 20px;
+    width: 928px;
+    border-bottom: none;
+    padding-left: 36px;
+    width: 912px;
+}
+
+#showWrapper img {
+    float: left;
+    display: inline;
+    margin-right: 5px;
+    margin-left: 10px;
+}
+
+#wrappingOptions .wrapUp {
+    display: inline;
+    float: left;
+    width: 280px;
+}
+
+    #wrappingOptions .wrapUp .radio {
+        float: left;
+        display: inline;
+        margin-right: 20px;
+        margin-bottom: 5px;
+        clear: left;
+    }
+
+        #wrappingOptions .wrapUp .radio img {
+            margin-left: 40px;
+            margin-bottom: 10px;
+        }
+
+    #wrappingOptions .wrapUp .radioText {
+        float: left;
+        display: inline;
+        font-size: 1.2em;
+        line-height: 1.2em;
+        clear: right;
+        color: #5C5C5C;
+    }
+
+    #wrappingOptions .wrapUp .giftMessage {
+        font-size: 1.0em;
+        clear: left;
+        display: block;
+        margin-left: 40px;
+        clear: both;
+        margin-bottom: 15px;
+        float: left;
+        width: 237px;
+    }
+
+    #wrappingOptions .wrapUp .wrapPrice {
+        font-size: 1.2em;
+        font-weight: bold;
+        color: #5C5C5C;
+        padding-top: 3px;
+    }
+
+#wrappingCollapses {
+    float: left;
+    width: 520px;
+}
+
+#addMessage {
+    width: 470px;
+    float: left;
+    display: block;
+    padding: 20px 20px 20px 40px;
+}
+
+    #addMessage .addMessageWrap {
+        float: left;
+        display: inline;
+        width: 400px;
+        padding: 0px;
+        margin: 0px;
+    }
+
+
+    #addMessage .typeMessage {
+        width: 300px;
+        display: block;
+        clear: right;
+    }
+
+        #addMessage .typeMessage span {
+            width: 314px;
+            display: block;
+            font-size: 1.2em;
+            font-family: arial;
+            clear: right;
+            clear: left;
+            color: #5c5c5c;
+        }
+
+    #addMessage textarea {
+        width: 400px;
+        height: 100px;
+        font-size: 1.2em;
+        font-family: arial;
+        margin-top: 10px;
+        display: block;
+        float: left;
+        overflow-y: scroll;
+    }
+
+    #addMessage form {
+        float: left;
+        width: 420px;
+    }
+
+    #addMessage span {
+        float: left;
+        display: inline;
+        margin-top: 5px;
+        line-height: 1.2em;
+        width: 200px;
+        font-family: arial;
+    }
+
+    #addMessage input {
+        display: inline;
+        float: right;
+        margin-top: 10px;
+        margin-right: 0px;
+        width: 50px;
+    }
+
+#showMessage {
+    width: 470px;
+    float: left;
+    display: none;
+    padding: 20px;
+}
+
+    #showMessage span {
+        width: 450px;
+        float: left;
+        margin-right: 20px;
+    }
+
+    #showMessage p {
+        float: left;
+        display: inline;
+        font-size: 1.1em;
+        line-height: 1.2em;
+    }
+
+    #showMessage input {
+        float: left;
+        display: inline;
+        margin-top: 40px;
+    }
+
+#discountMessage, #shoppedSavings, #shoppedTotalSavings {
+    background-color: #FFFFCC;
+    border-top: 1px solid #CCCCCC;
+    display: inline;
+    float: left;
+    height: 15px;
+    padding-bottom: 10px;
+    padding-right: 15px;
+    padding-top: 10px;
+    width: 933px;
+}
+
+
+
+#shoppedSavings, #shoppedTotalSavings {
+    background-color: #fff;
+}
+
+#shoppedSavings {
+}
+
+#discountMessage p {
+    font-size: 1.2em;
+    font-family: arial;
+    color: #0099CC;
+    font-weight: bold;
+    padding-left: 10px;
+    float: left;
+    display: inline;
+    line-height: 15px;
+}
+
+
+#discountMessage .totalAndSavings, #giftCode .totalAndSavings, #selectGiftWrapper .totalAndSavings, #shoppedSavings .totalAndSavings, #shoppedTotalSavings .totalAndSavings {
+    display: inline;
+    float: right;
+    line-height: 15px;
+    margin-right: 20px;
+    width: 190px;
+}
+
+#discountMessage .couponRemoval, .cartTable td.features .phoneInfo .promotionalDiscount .couponRemoval {
+    font-size: 1.2em;
+    float: left;
+    font-weight: normal;
+    margin-left: 40px;
+    margin-top: 0px;
+    line-height: 1.2em;
+}
+
+.cartTable td.features .phoneInfo .promotionalDiscount .couponRemoval {
+    padding-top: 2px;
+}
+
+#discountMessage .couponRemoval a {
+    line-height: 1.2em;
+}
+
+#selectGiftWrapper .totalAndSavings {
+    width: 210px;
+    margin-right: 19px;
+}
+
+.totalAndSavings .totalSavings {
+    float: left;
+    display: inline;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #5C5C5C;
+    text-align: right;
+    width: 104px;
+}
+
+.totalAndSavings .totalToPay {
+    float: left;
+    display: inline;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #5C5C5C;
+    text-align: left;
+    width: 76px;
+    padding-left: 10px;
+}
+
+
+#giftCode {
+    float: left;
+    display: inline;
+    width: 933px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 0px 15px 0px 0px;
+}
+
+    #giftCode form label {
+        float: left;
+        display: inline;
+        font-size: 1.3em;
+        color: #5C5C5C;
+        font-family: arial;
+        font-weight: bold;
+        margin-top: 4px;
+        margin-right: 10px;
+    }
+
+    #giftCode form input[type="text"] {
+        float: left;
+        display: inline;
+        width: 90px;
+        height: 18px;
+        font-size: 1.2em;
+        color: #5c5c5c;
+    }
+
+    #giftCode form img {
+        margin-right: 5px;
+        margin-left: 5px;
+        margin-top: 2px;
+    }
+
+    #giftCode .merchandiseTotal {
+        width: 100px;
+        margin: 0px;
+    }
+
+    #giftCode img {
+        float: left;
+        display: inline;
+        margin-top: 0px;
+        padding: 0px 3px 0px 3px;
+    }
+
+    #giftCode form {
+        width: 330px;
+        float: right;
+        display: inline;
+        padding: 0px;
+        margin-top: 10px;
+    }
+
+#moreActions {
+    width: 918px;
+    padding: 15px;
+    float: left;
+    display: inline;
+}
+
+    #moreActions input {
+        float: left;
+        display: inline;
+        margin-left: 5px;
+        margin-top: 12px;
+        margin-right: 0px;
+    }
+
+
+
+
+
+
+
+#myWishlistCarousel, #alsoPurchasedCarousel {
+    border-top: 6px solid #CCCCCC;
+    float: left;
+    width: 1000px;
+    display: inline;
+    padding-bottom: 6px;
+}
+
+#alsoPurchasedCarousel {
+    border-top: none;
+}
+
+    #myWishlistCarousel .carouselWrap, #alsoPurchasedCarousel .carouselWrap {
+        width: 1000px;
+        float: left;
+        display: inline;
+        margin-bottom: 0;
+    }
+
+        #myWishlistCarousel .carouselWrap h3, #alsoPurchasedCarousel .carouselWrap h3 {
+            margin: 15px 0 15px 25px;
+            float: left;
+            display: inline;
+        }
+
+        #myWishlistCarousel .carouselWrap h3 {
+            width: 90px;
+            float: left;
+            display: inline;
+        }
+
+        #myWishlistCarousel .carouselWrap .selectAllWishlist {
+            margin-top: 12px;
+            float: left;
+            display: inline;
+            margin-left: 10px;
+            font-size: 1.1em;
+        }
+
+#myWishlistCarousel #myWishlistMoveItems {
+    float: right;
+    margin-top: 10px;
+    width: 420px;
+    display: inline;
+    margin-right: 16px;
+}
+
+    #myWishlistCarousel #myWishlistMoveItems input {
+        float: right;
+        margin-right: 10px;
+    }
+
+
+#myWishlistCarousel .carouselWrap .wishlistItemCount {
+    float: left;
+    display: inline;
+    margin-top: 15px;
+    font-size: 1.2em;
+}
+
+#myWishlistCarousel .carouselWrap .carousel, #alsoPurchasedCarousel .carouselWrap .carousel {
+    height: 250px;
+    width: 970px;
+    display: inline;
+    float: left;
+    display: inline;
+}
+
+#myWishlistCarousel .carouselWrap div.scrollable, #alsoPurchasedCarousel .carouselWrap div.scrollable {
+    width: 932px;
+    height: 199px;
+    float: left;
+    display: inline;
+}
+
+#myWishlistCarousel .carouselWrap .scrollable .items .itemWrapper, #alsoPurchasedCarousel .carouselWrap .scrollable .items .itemWrapper {
+    width: 171px;
+    height: 197px;
+    float: left;
+    margin: 0 8px 0 8px;
+    float: left;
+    display: inline;
+}
+
+#myWishlistCarousel .carouselWrap .scrollable .items .item, #alsoPurchasedCarousel .carouselWrap .scrollable .items .item {
+    width: 167px;
+    height: 196px;
+    padding: 0;
+    display: inline;
+    float: left;
+    margin: 0;
+    border: 1px solid #CCCCCC;
+}
+
+#myWishlistCarousel a.prev, #myWishlistCarousel a.next, #myWishlistCarousel a.prevPage, #myWishlistCarousel a.nextPage, #alsoPurchasedCarousel a.prev, #alsoPurchasedCarousel a.next, #alsoPurchasedCarousel a.prevPage, #alsoPurchasedCarousel a.nextPage {
+    height: 197px;
+    float: left;
+    display: inline;
+}
+
+#myWishlistCarousel a.prevPage, #alsoPurchasedCarousel a.prevPage {
+    float: left;
+    clear: left;
+}
+
+#myWishlistCarousel a.nextPage {
+    float: right;
+    clear: right;
+}
+
+#myWishlistCarousel .nameAndConfig, #alsoPurchasedCarousel .nameAndConfig {
+    width: 169px;
+    overflow: hidden;
+    float: left;
+    display: inline;
+}
+
+#myWishlistCarousel .manufacturerName, #myWishlistCarousel .modelName, #alsoPurchasedCarousel .manufacturerName, #alsoPurchasedCarousel .modelName {
+    font-size: 1.4em;
+    margin-left: 10px;
+    clear: both;
+    width: auto;
+    float: left;
+}
+
+#myWishlistCarousel .manufacturerName, #alsoPurchasedCarousel .manufacturerName {
+    line-height: 1.8em;
+    height: 25px;
+    line-height: 1.8em;
+    float: left;
+    display: inline;
+}
+
+#myWishlistCarousel .manufacturerName {
+    clear: right;
+    float: left;
+    display: inline;
+    margin-left: 10px;
+}
+
+#myWishlistCarousel .item input, #alsoPurchasedCarousel .item input {
+    margin-left: 30px;
+    clear: both;
+    float: left;
+}
+
+#myWishlistCarousel .nameAndConfig input {
+    float: left;
+    display: inline;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 6px;
+    margin-top: 6px;
+    clear: none;
+}
+
+
+#myWishlistCarousel .modelName, #alsoPurchasedCarousel .modelName {
+    font-size: 1.2em;
+    height: 12px;
+    float: left;
+    display: inline;
+}
+
+#myWishlistCarousel .modelName {
+    margin-left: 30px;
+    float: left;
+    clear: both;
+    display: inline;
+}
+
+#myWishlistCarousel .prodImage, #alsoPurchasedCarousel .prodImage {
+    clear: left;
+    width: 79px;
+    float: left;
+}
+
+    #myWishlistCarousel .prodImage img, #alsoPurchasedCarousel .prodImage img {
+        width: 79px;
+        float: left;
+    }
+
+#myWishlistCarousel .priceInfo, #alsoPurchasedCarousel .priceInfo {
+    height: 100px;
+    margin-left: 0px;
+    margin-right: 6px;
+    width: 80px;
+    float: left;
+    display: inline;
+    overflow: hidden;
+}
+
+#myWishlistCarousel .productPrice, #myWishlistCarousel .details, #alsoPurchasedCarousel .productPrice, #alsoPurchasedCarousel .details {
+    font-size: 1.8em;
+    width: 80px;
+    float: left;
+    display: inline;
+}
+
+#myWishlistCarousel .prodDescpn, #alsoPurchasedCarousel .prodDescpn {
+    font-size: 1em;
+    float: left;
+    display: inline;
+    overflow: hidden;
+    width: 80px;
+    color: #5c5c5c;
+    line-height: 1em;
+}
+
+#myWishlistCarousel .productPrice, #alsoPurchasedCarousel .productPrice {
+    line-height: 2em;
+    margin-top: 4px;
+}
+
+#myWishlistCarousel .details, #alsoPurchasedCarousel .details {
+    font-size: 1.2em;
+}
+
+#myWishlistCarousel .compare, #alsoPurchasedCarousel .compare {
+    font-size: 1.1em;
+    margin-left: 30px;
+    margin-top: 6px;
+    width: 140px;
+}
+
+    #myWishlistCarousel .compare label, #alsoPurchasedCarousel .compare label {
+        margin-left: 6px;
+        margin-top: 2px;
+    }
+
+#myWishlistCarousel input[type=button], #alsoPurchasedCarousel input[type=button] {
+    background: url("../images/button-generic-tile.jpg") repeat-x scroll 0 0 transparent;
+    border: medium none;
+    color: #FFF;
+    font-weight: bold;
+    float: left;
+    font-size: 1.1em;
+    width: 105px;
+    height: 20px;
+    padding: 2px;
+    margin-right: 4px;
+    position: relative;
+    display: inline;
+    padding: 0 0 2px 0;
+}
+
+.nameAndConfig {
+    float: left;
+}
+
+.manufacturerName, .modelName {
+    display: inline;
+    float: left;
+    font-size: 1.4em;
+    margin-left: 10px;
+    width: 175px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #0099CC;
+    overflow: hidden;
+}
+
+.manufacturerName {
+    line-height: 1.8em;
+    font-weight: bold;
+    height: 25px;
+}
+
+.modelName {
+    font-size: 1.2em;
+    color: #5C5C5C;
+    height: 12px;
+}
+
+.prodImage {
+    float: left;
+}
+
+.priceInfo {
+    color: #0099CC;
+    display: inline;
+    float: left;
+    height: 88px;
+    margin-left: 0px;
+    margin-right: 6px;
+    width: 88px;
+    /*overflow:hidden;*/
+}
+
+.productPrice, .details {
+    float: left;
+    font-family: Arial;
+    font-size: 1.8em;
+    font-weight: bold;
+    width: 88px;
+}
+
+.productPrice {
+    line-height: 2em;
+    margin-top: 4px;
+}
+
+.details {
+    font-weight: normal;
+    font-size: 1.2em;
+}
+
+.compare {
+    display: inline;
+    float: left;
+    font-size: 1.1em;
+    margin-left: 30px;
+    margin-top: 6px;
+    text-align: center;
+    width: 164px;
+}
+
+    .compare label {
+        display: inline;
+        float: left;
+        margin-left: 6px;
+        margin-top: 2px;
+    }
+
+    .compare input {
+        float: left;
+    }
+
+
+
+/*------------SHOPPING CART ENDS-----------------------------------*/
+.viewOrdersSection {
+    display: block;
+    float: left;
+    overflow: hidden;
+    width: 771px;
+}
+
+    .viewOrdersSection h4 {
+        background: url("../images/bg-tile-header.jpg") repeat scroll 0 0 #51A8DF;
+        clear: both;
+        color: #FFFFFF;
+        display: inline;
+        float: left;
+        font-size: 1.1em;
+        font-weight: bold;
+        height: 25px;
+        width: 746px;
+        margin: 0;
+        padding-left: 25px;
+        position: relative;
+        line-height: 2.2em;
+    }
+
+        .viewOrdersSection h4 span {
+            float: left;
+            color: #FFFFFF;
+        }
+
+.profileInformation .viewOrdersSection h4 span a {
+    float: left;
+    line-height: 2.2em;
+    color: #FFFFFF;
+}
+
+.viewOrdersSection span a {
+    float: left;
+    line-height: 1.4em;
+}
+
+.viewOrdersSection h4 span.link {
+    display: inline;
+    float: right;
+    margin-right: 15px;
+}
+
+.viewOrdersSection div.block {
+    padding: 10px 0 10px 25px;
+    display: inline;
+    float: left;
+    width: 225px;
+}
+
+#orderInformation.viewOrdersSection div.block {
+    width: 165px;
+}
+
+.viewOrdersSection div span {
+    font-size: 1.1em;
+    color: #5C5C5C;
+    padding: 0px;
+    margin-right: 4px;
+    line-height: 1.4em;
+    display: inline;
+    float: left;
+}
+
+    .viewOrdersSection div span.results {
+        font-weight: bold;
+    }
+
+    .viewOrdersSection div span.link {
+        font-size: 1.1em;
+    }
+
+    .viewOrdersSection div span.required {
+        width: 50px;
+    }
+
+    .viewOrdersSection div span.providedLineExtra {
+        padding-left: 54px;
+        clear: both;
+    }
+
+    .viewOrdersSection div span.link a {
+        line-height: 1.4em;
+        float: left;
+    }
+
+    .viewOrdersSection div span.link .infoIcon {
+        line-height: 1.4em;
+        padding: 0 0 2px 0;
+        float: left;
+    }
+
+#subTotal {
+    float: left;
+    display: inline;
+    width: 741px;
+    padding: 15px;
+}
+
+    #subTotal .total {
+        float: right;
+        display: inline;
+        width: 250px;
+        list-style: none;
+        border: none;
+        margin-right: 20px;
+    }
+
+        #subTotal .total li {
+            float: right;
+            display: block;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #5096aa;
+            font-family: arial;
+        }
+
+            #subTotal .total li span {
+                float: left;
+                display: inline;
+                text-align: right;
+                padding-bottom: 5px;
+            }
+
+                #subTotal .total li span.head {
+                    text-align: left;
+                    width: 90px;
+                }
+
+                #subTotal .total li span.itemPrice {
+                    width: 100px;
+                }
+
+    #subTotal .sumTotal {
+        width: 741px;
+        height: 26px;
+        border: 1px solid #ccc;
+        float: left;
+        display: inline;
+        margin-top: 20px;
+    }
+
+        #subTotal .sumTotal li {
+            display: inline;
+            list-style: none;
+            height: 26px;
+            margin: 0px;
+            font-size: 1.1em;
+            float: left;
+        }
+
+            #subTotal .sumTotal li.shipDetail, #subTotal .sumTotal li.returnPoilcy, #subTotal .sumTotal li.totalBill {
+                background: url("../images/bg-tile-header.jpg") repeat scroll 0 0 transparent;
+            }
+
+            #subTotal .sumTotal li.shipDetail {
+                width: 120px;
+                border-right: 1px solid #fff;
+                padding-left: 10px;
+            }
+
+                #subTotal .sumTotal li.shipDetail a, #subTotal .sumTotal li.returnPoilcy a {
+                    line-height: 26px;
+                    font-weight: bold;
+                    color: #1F3E3E;
+                }
+
+
+
+            #subTotal .sumTotal li.returnPoilcy {
+                width: 220px;
+                border-right: 1px solid #fff;
+                padding-left: 10px;
+            }
+
+            #subTotal .sumTotal li.totalBill {
+                width: 369px;
+                text-align: right;
+                padding-right: 10px;
+                line-height: 26px;
+                font-weight: bold;
+                text-align: right;
+                color: #1F3E3E;
+                font-size: 1.4em;
+                float: left;
+                display: inline;
+            }
+
+                #subTotal .sumTotal li.totalBill .itemTotal {
+                    line-height: 26px;
+                    font-weight: bold;
+                    color: #fff;
+                    display: inline;
+                    float: right;
+                }
+
+                #subTotal .sumTotal li.totalBill .totalAmount {
+                    line-height: 26px;
+                    font-weight: bold;
+                    color: #fff;
+                    width: 161px;
+                    display: inline;
+                    float: right;
+                }
+
+#myWishlistCarousel #myWishlistMoveItems input.reducedWidth1 {
+    width: 190px;
+}
+
+#myWishlistCarousel #myWishlistMoveItems input.reducedWidth2 {
+    width: 120px;
+}
+
+
+
+/*Catalog Ends ----- Dinesh*/
+
+
+
+/*Browse Products Starts  --- Dinesh */
+
+#facetsWrap, #extrasSectionWrap {
+    display: inline;
+    float: left;
+    margin: 0;
+    position: relative;
+    width: 201px;
+    background: #fff;
+}
+
+#catalogContentWrap {
+    display: inline;
+    float: left;
+    margin: 0;
+    position: relative;
+    width: 586px;
+    background: #fff;
+    margin: 0px 6px;
+}
+
+#catalogContentWrap, #facetsWrap, #extrasSectionWrap {
+    height: auto; /*This is temporary*/
+}
+
+#searchFacets, #extrasSection {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+    #searchFacets h3, #extrasSection h3 {
+        padding-left: 12px;
+    }
+
+#byPhones, #byManufacturer, #byRecommended, #byStyles, #byPhoneColor, #byPriceRange, #byAccessories, #comingSoon, #moreOptions, #byPlans, #byMonthlyCost, #byRatePlan, #byContractLength, #byNetworkProvider, #byFreeGifts, #byWantedFeatures {
+    float: left;
+    border-bottom: 1px solid #DDDDDD;
+    padding-bottom: 6px;
+}
+
+
+    #byPhones h3, #byManufacturer h3, #byRecommended h3, #byStyles h3, #byPhoneColor h3, #byPriceRange h3, #byAccessories h3, #comingSoon h3, #moreOptions h3, #byPlans h3, #byRatePlan h3, #byContractLength h3, #byMonthlyCost h3, #byNetworkProvider h3, #byFreeGifts h3, #byWantedFeatures h3, #compBasket h3, #recentSearches h3 {
+        float: left;
+        font-size: 1.1em;
+        height: 20px;
+        line-height: 1.3em;
+        margin: 0;
+        padding-top: 5px;
+        width: 160px;
+        position: relative;
+    }
+
+    #byPhones span, #moreOptions span, #byPlans span {
+        float: left;
+        margin: 2px 0 2px 10px;
+        width: 180px;
+        font-size: 1.1em;
+    }
+
+    #byManufacturer fieldset, #byRecommended fieldset, #byRatePlan fieldset, #byContractLength fieldset, #byNetworkProvider fieldset, #byFreeGifts fieldset, #byStyles fieldset, #byAccessories fieldset, #byWantedFeatures fieldset {
+        width: auto;
+        float: left;
+        margin: 0px;
+        margin-top: 6px;
+        display: inline;
+    }
+
+        #byManufacturer fieldset > div, #byRecommended fieldset > div, #byRatePlan fieldset > div, #byContractLength fieldset > div, #byNetworkProvider fieldset > div, #byFreeGifts fieldset > div, #byStyles fieldset > div, #byAccessories fieldset > div, #byWantedFeatures fieldset > div {
+            margin: 0px;
+            display: inline;
+            float: left;
+            height: 16px;
+            margin-bottom: 4px;
+            margin-left: 10px;
+            margin-top: 4px;
+            width: 185px;
+            clear: both;
+        }
+
+            #byManufacturer fieldset > div label, #byRecommended fieldset > div label, #byRatePlan fieldset > div label, #byContractLength fieldset > div label, #byNetworkProvider fieldset > div label, #byFreeGifts fieldset > div label, #byStyles fieldset > div label, #byAccessories fieldset > div label, #byWantedFeatures fieldset > div label {
+                display: inline;
+                float: left;
+                margin-left: 4px;
+                margin-right: 0;
+                margin-top: 3px;
+                padding: 1px 0 0 1px;
+                text-align: left;
+                width: auto;
+                font-size: 1.1em;
+            }
+
+
+    #byManufacturer .heading span, #byRecommended .heading span, #byPhones .heading span, #byStyles .heading span, #byPhoneColor .heading span, #byPriceRange .heading span, #byAccessories .heading span, #byPlans .heading span, #byWantedFeatures .heading span, #byRatePlan .heading span, #byContractLength .heading span, #byMonthlyCost .heading span, #byNetworkProvider .heading span, #byFreeGifts .heading span {
+        background: url("../images/col-arrow-closed.jpg") no-repeat scroll 0 0 transparent;
+        display: inline;
+        float: right;
+        height: 25px;
+        margin: 0 4px 0 0;
+        width: 25px;
+    }
+
+        #byManufacturer .heading span.dropDownArrow, #byRecommended .heading span.dropDownArrow, #byPhones .heading span.dropDownArrow, #byStyles .heading span.dropDownArrow, #byPhoneColor .heading span.dropDownArrow, #byPriceRange .heading span.dropDownArrow, #byAccessories .heading span.dropDownArrow, #byPlans .heading span.dropDownArrow, #byWantedFeatures .heading span.dropDownArrow, #byRatePlan .heading span.dropDownArrow, #byContractLength .heading span.dropDownArrow, #byMonthlyCost .heading span.dropDownArrow, #byNetworkProvider .heading span.dropDownArrow, #byFreeGifts .heading span.dropDownArrow {
+            background: url('../images/col-arrow-open.jpg');
+        }
+
+#slider-range {
+    float: left;
+    margin-top: 12px;
+    width: 150px;
+}
+
+.range {
+    display: inline;
+    float: left;
+    height: auto;
+    padding: 10px 10px 6px;
+    width: auto;
+    position: relative;
+}
+
+    .range input[type="text"] {
+        border: medium none;
+        display: inline;
+        float: left;
+        font-size: 1.1em;
+        font-weight: bold;
+        margin-left: 4px;
+        padding-top: 2px;
+        width: 80px;
+    }
+
+    .range label {
+        font-size: 1.2em;
+        font-weight: bold;
+        float: left;
+        width: 80px;
+        line-height: 1.4em;
+    }
+
+    .range p {
+        float: left;
+        height: 18px;
+        width: 180px;
+    }
+
+.phoneColors {
+    display: inline;
+    float: left;
+    padding: 10px 12px;
+    width: 175px;
+    overflow: hidden;
+}
+
+    .phoneColors img {
+        margin: 4px;
+        display: inline;
+        float: left;
+    }
+        /*.phoneColors img:hover,.phoneColors img:focus, .phoneColors img.selected{border:2px solid #DEDEDE;margin:2px;display:inline;}*/
+        .phoneColors img.selected {
+            border: 2px solid #666666;
+            margin: 2px;
+        }
+
+
+#catalogContent {
+    float: left;
+}
+
+    #catalogContent h2 {
+        margin-top: 12px;
+        margin-left: 8px;
+    }
+
+    #catalogContent #banner {
+        height: 102px;
+        width: 569px;
+        float: left;
+        margin-left: 8px;
+        margin-bottom: 8px;
+        display: inline;
+    }
+
+    #catalogContent form, #sortAndView, .paginationWrap, .cataloglisting {
+        float: left;
+        width: 586px;
+        overflow: visible;
+    }
+
+#sortAndView, .paginationWrap {
+    margin-top: 8px;
+}
+
+.paginationWrap {
+    margin-bottom: 8px;
+}
+
+    #sortAndView .sortBy, .paginationWrap .perPage {
+        display: inline;
+        float: left;
+        height: 21px;
+        margin-left: 12px;
+        margin-top: 2px;
+    }
+
+.sortBy label, .perPage label {
+    color: #3A7C95;
+    float: left;
+    font-size: 1.2em;
+    margin: 3px 0 0;
+    width: 50px;
+}
+
+#sortAndView .view {
+    display: inline;
+    float: right;
+    height: 23px;
+    margin-right: 12px;
+    width: 50px;
+}
+
+.view #listView {
+    width: 26px;
+    height: 23px;
+    float: left;
+    cursor: pointer;
+}
+
+.view .listViewNotSelected {
+    background: url('../images/listview-notselected.jpg');
+}
+
+.view .listViewSelected {
+    background: url('../images/listview-selected.jpg');
+}
+
+.view .thumbViewSelected {
+    background: url('../images/thumbview-selected.jpg');
+}
+
+.view .thumbViewNotSelected {
+    background: url('../images/thumbview-notselected.jpg');
+}
+
+.view #thumbView {
+    width: 24px;
+    height: 23px;
+    float: left;
+    cursor: pointer;
+}
+
+.view .thumbViewNotSelected {
+    width: 24px;
+    height: 23px;
+    float: left;
+    cursor: pointer;
+}
+
+/* Pagination */
+
+.pagination {
+    display: inline;
+    float: right;
+    list-style: none;
+    margin: 4px 5px 4px 2px;
+    overflow: hidden;
+    width: auto;
+}
+
+    .pagination li {
+        float: left;
+        margin: 0 4px 0 0;
+        overflow: hidden;
+        padding: 0 1px;
+        width: auto;
+    }
+
+        .pagination li span {
+            font-size: 1.2em;
+            line-height: 1.5em;
+        }
+
+    .pagination a {
+        float: left;
+        font-size: 1.2em;
+        line-height: 1.5em;
+        text-decoration: none;
+        margin-right: 3px;
+    }
+
+    .pagination img {
+        margin-top: 3px;
+    }
+/*Pagination ends*/
+.cataloglisting {
+    border-bottom: 1px solid #CCCCCC;
+}
+
+    .cataloglisting .product {
+        border-right: 1px solid #CCCCCC;
+        border-top: 1px solid #CCCCCC;
+        float: left;
+        height: 254px;
+        margin: 0;
+        width: 194px;
+        text-align: center;
+    }
+
+.nameAndConfig {
+    float: left;
+    text-align: left;
+}
+
+.manufacturerName, .modelName {
+    display: inline;
+    float: left;
+    font-size: 1.4em;
+    margin-left: 10px;
+    width: 175px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #3A7C95;
+    overflow: hidden;
+}
+
+.manufacturerName {
+    line-height: 1.8em;
+    font-weight: bold;
+    height: 25px;
+}
+
+.modelName {
+    font-size: 1.2em;
+    color: #000;
+    height: 14px;
+}
+
+.prodImage {
+    float: left;
+}
+
+.priceInfo {
+    color: #3A7C95;
+    display: inline;
+    float: left;
+    height: 130px;
+    margin-left: 0px;
+    margin-right: 6px;
+    width: 88px;
+    text-align: left;
+    /*overflow:hidden;*/
+}
+
+.productPrice, .details {
+    float: left;
+    font-family: Arial;
+    font-size: 1.8em;
+    font-weight: bold;
+    width: 88px;
+}
+
+.productPrice {
+    line-height: 2em;
+    margin-top: 4px;
+}
+
+.details {
+    font-weight: normal;
+    font-size: 1.2em;
+}
+
+.compare {
+    display: inline;
+    float: left;
+    font-size: 1.1em;
+    margin-left: 30px;
+    margin-top: 6px;
+    text-align: center;
+    width: 164px;
+    position: relative;
+}
+
+    .compare label {
+        display: inline;
+        float: left;
+        margin-left: 6px;
+        margin-top: 2px;
+    }
+
+    .compare input {
+        float: left;
+    }
+
+.genericButton {
+    background: url("../images/button-generic-tile.jpg") repeat-x scroll 0 0 transparent;
+    border: medium none;
+    color: #F1F1F1;
+    font-family: arial;
+    font-size: 1.1em;
+    font-weight: bold;
+    height: 25px;
+    padding-bottom: 4px;
+    margin: 0 10px;
+}
+
+.basket {
+    display: none;
+    visibility: hidden;
+}
+
+.productLview .basket {
+    display: block;
+    visibility: visible;
+}
+
+
+.productLview .plus {
+    background: url("../images/+icon.jpg") no-repeat scroll center center transparent;
+}
+
+.productLview .basket .minus, .productLview .basket .plus {
+    float: left;
+    height: 14px;
+    margin: 3px 6px;
+    width: 14px;
+    cursor: pointer;
+}
+
+.productLview .minus {
+    background: url("../images/-icon.jpg") no-repeat scroll center center transparent;
+    margin-right: 6px;
+}
+
+.productLview .basket .qty {
+    display: inline;
+    float: left;
+    margin: 6px 20px 8px 103px;
+}
+
+    .productLview .basket .qty span {
+        float: left;
+        margin-top: 3px;
+        display: inline;
+    }
+
+.productLview .basket .qtyInput {
+    float: left;
+    font-size: 1.2em;
+    height: 16px;
+    width: 32px;
+}
+
+/*Listview Classes Start*/
+.cataloglisting .productLview {
+    height: auto;
+    width: 585px;
+}
+
+.nameAndConfigLview {
+    margin-left: 168px;
+    margin-top: 10px;
+    width: 50%;
+}
+
+.prodImageLview {
+    display: inline;
+    height: 145px;
+    margin-left: 30px;
+    margin-top: -42px;
+    overflow: hidden;
+    width: 100px;
+}
+
+.priceInfoLview {
+    height: 108px;
+    margin-bottom: 4px;
+    margin-left: 47px;
+    width: 136px;
+}
+
+.compareLview {
+    margin-left: 100px;
+    margin-top: 16px;
+    width: 150px;
+}
+
+.cataloglistingLview {
+    border-top: 1px solid #D2D2D2;
+    height: auto;
+}
+
+.genericButtonLview {
+    margin-right: 84px;
+    float: right;
+}
+/*Listview Classes End*/
+
+/*Browse Products Ends*/
+
+/*Browse SimOnly Starts*/
+.simOnly span.planTitle {
+    color: #5096AA;
+    display: inline;
+    float: left;
+    font-size: 1.4em;
+    font-weight: bold;
+    margin: 6px 6px 6px 12px;
+    width: 550px;
+    line-height: 1.6em;
+}
+
+.selectedPlan {
+    border-bottom: 1px solid #A9C9D7;
+    border-top: 1px solid #A9C9D7;
+    float: left;
+    background: #F5F7FE;
+}
+
+    .selectedPlan h3 {
+        margin-left: 8px;
+        float: left;
+        display: inline;
+        margin-bottom: 0;
+        padding-bottom: 10px;
+    }
+
+    .cataloglisting .simOnly, .selectedPlan .simOnly {
+        border-top: 1px solid #CCCCCC;
+        float: left;
+        width: 586px;
+        height: auto;
+        display: block;
+        padding-bottom: 12px;
+    }
+
+    .selectedPlan .simOnly {
+        border-bottom: 1px solid #BCD5DC;
+        border-top: 1px solid #BCD5DC;
+        background: #fff;
+    }
+
+.simOnlyImage {
+    display: inline;
+    float: left;
+    margin-left: 16px;
+    margin-top: 6px;
+    width: 50px;
+    height: 100px;
+}
+
+.simOnly .priceInfo {
+    margin-left: 6px;
+    margin-top: 6px;
+    width: 100px;
+    /*height:105px;*/
+    height: auto;
+}
+
+.simOnly .simOnlyPrice {
+    float: left;
+    font-family: Arial;
+    font-size: 2.4em;
+    font-weight: bold;
+    width: 88px;
+    margin-top: 4px;
+}
+
+.perMonth {
+    color: #999999;
+    float: left;
+    font-size: 1.4em;
+    margin-top: 4px;
+    margin-bottom: 8px;
+}
+
+.simOnlyInfo {
+    display: inline;
+    float: left;
+    margin: 12px 8px 8px;
+    width: 200px;
+}
+
+.extraInfo {
+    background: none repeat scroll 0 0 #FFFEDC;
+    border: 1px solid #CCCCCC;
+    display: inline;
+    float: left;
+    margin: 0 12px 0;
+    width: 560px;
+    font-size: 1.1em;
+    padding-bottom: 3px;
+}
+
+    .extraInfo h4, .extraInfo ul {
+        color: #3A7C95;
+        display: inline;
+        float: left;
+        margin-bottom: 6px;
+        margin-left: 10px;
+        margin-top: 6px;
+    }
+
+    .extraInfo ul {
+        font-size: 1.1em;
+        line-height: 1.3em;
+        width: 94%;
+        height: auto;
+        margin-bottom: 0px;
+    }
+
+.simOnlyInfo div {
+    margin-bottom: 4px;
+}
+
+.simOnlyInfo span {
+    font-size: 1.2em;
+}
+
+    .simOnlyInfo span.youGet {
+        font-size: 1.8em;
+        color: #3A7C95;
+    }
+
+.simOnly input[type="button"] {
+    display: inline;
+    float: right;
+    margin-right: 14px;
+    margin-top: 50px;
+}
+
+.simOnly .selectAndView {
+    width: 140px;
+}
+
+.selectedPhone {
+    float: left;
+    border-top: 1px solid #A9C9D7;
+    border-bottom: 1px solid #A9C9D7;
+    background: #F5F7FE;
+}
+
+    .selectedPhone h3 {
+        display: inline;
+        float: left;
+        margin-left: 8px;
+    }
+
+    .selectedPhone .product {
+        border-bottom: 1px solid #BCD5DC;
+        border-top: 1px solid #BCD5DC;
+        float: left;
+        width: 586px;
+        background: #fff;
+        display: inline;
+        padding-bottom: 4px;
+    }
+
+    .selectedPhone .nameAndConfig {
+        margin-left: 10px;
+        margin-top: 4px;
+        width: 270px;
+    }
+
+    .selectedPhone .priceInfo {
+        margin-left: 20px;
+        height: auto;
+        width: 220px;
+    }
+
+    .selectedPhone .productPrice, .selectedPhone .details {
+        width: 80%;
+        margin-top: 0px;
+    }
+
+.changeTheSelected {
+    color: #3A7C95;
+    float: right;
+    font-size: 1.1em;
+    line-height: 1em;
+    margin: 10px 16px 12px 0;
+}
+
+.simOnly .compare {
+    display: inline;
+    float: right;
+    margin-right: 16px;
+    width: auto;
+    margin-bottom: 4px;
+}
+
+.description {
+    display: none;
+    visibility: hidden;
+}
+
+.productLview .description {
+    background: none repeat scroll 0 0 transparent;
+    visibility: visible;
+    display: inline;
+    float: left;
+    font-size: 1.1em;
+    margin-bottom: 2px;
+    margin-left: 37px;
+    margin-right: 12px;
+    text-align: left;
+    width: 400px;
+}
+
+    .productLview .description p {
+        margin: 10px;
+    }
+
+.ratings {
+    margin-bottom: 2px;
+    position: relative;
+}
+
+.ratings, .starbar {
+    float: left;
+    width: 60px;
+    background: url("../images/greystar.jpg");
+    height: 13px;
+    display: inline;
+}
+
+.starbar {
+    background: url("../images/bluestar.jpg");
+    width: 60px;
+    position: absolute;
+}
+
+.star1, .star2, .star3, .star4, .star5 {
+    cursor: pointer;
+    float: left;
+    height: 13px;
+    width: 12px;
+}
+
+.compare span {
+    position: absolute;
+    top: 0px;
+    left: -27px;
+    background: #FFFEDC;
+    border: 1px solid #CCCCCC;
+    padding: 4px 5px;
+    line-height: 1.2em;
+    width: 175px;
+    text-align: left;
+    display: block;
+    -webkit-box-shadow: 1px 4px 4px #888;
+    -moz-box-shadow: 1px 4px 4px #888;
+    z-index: 1000;
+    overflow: visible;
+}
+
+.compare .addedToBasket a {
+    color: #3A7C95;
+}
+
+.simOnly .compare span {
+    left: -50px;
+}
+
+/*Browse Plans Ends*/
+
+/*---------PRODUCT LISTING PAGE OVERLAY------------*/
+#productlistingoverlay #productDetail {
+    float: left;
+    width: 793px;
+    clear: both;
+}
+
+    #productlistingoverlay #productDetail .productDetailContent {
+        width: 763px;
+        float: left;
+        padding: 15px;
+        display: inline;
+    }
+
+    #productlistingoverlay #productDetail .quickview {
+        padding-top: 0px;
+    }
+
+#productlistingoverlay .productDetailContent .productHead, .productDetailContent .productBody {
+    float: left;
+    width: 763px;
+    display: inline;
+}
+
+.productDetailContent .productHead {
+    margin: 0 0 10px 0;
+}
+
+.productDetailContent h2 {
+    color: #5096AA;
+    font-family: Verdana;
+    font-size: 1.8em;
+    margin: 0 0 10px 0;
+    float: left;
+    width: auto;
+    line-height: 1.8em;
+}
+
+.productDetailContent .email, .productDetailContent .print {
+    background: url("../images/email.jpg");
+    background-repeat: no-repeat;
+    float: right;
+    height: 20px;
+    width: 21px;
+    margin-right: 4px;
+}
+
+.productDetailContent .print {
+    background: url("../images/print.jpg");
+    background-repeat: no-repeat;
+}
+
+    .productDetailContent .email a, .productDetailContent .print a {
+        float: left;
+        width: 100%;
+        height: 100%;
+    }
+
+.productDetailContent h4 {
+    float: left;
+    clear: both;
+    font-family: Verdana;
+    font-size: 1.2em;
+    margin: 0;
+    width: auto;
+}
+
+.productDetailContent .productView {
+    float: left;
+    display: inline;
+    clear: left;
+    margin: 0 0 10px 0;
+    width: 335px;
+}
+
+    .productDetailContent .productView .alternateViews {
+        float: left;
+        clear: both;
+        display: inline;
+        margin: 0 0 10px 0;
+        width: auto;
+    }
+
+        .productDetailContent .productView .alternateViews span {
+            padding: 0 4px 0 4px;
+            font-size: 1.1em;
+            float: left;
+            width: auto;
+        }
+
+    .productDetailContent .productView span.pipe {
+        background: url("../images/pipe.png") right;
+        background-repeat: no-repeat;
+    }
+
+    .productDetailContent .productView span.selected {
+        font-weight: bold;
+    }
+
+    .productDetailContent .productView .productImages {
+        float: left;
+        clear: left;
+        display: inline;
+        height: 270px;
+    }
+
+        .productDetailContent .productView .productImages .alternateViews {
+            width: 263px;
+            margin: 0 0 10px 40px;
+        }
+
+    .productDetailContent .productView .productMainImage {
+        float: left;
+        clear: left;
+        width: 263px;
+        height: 213px;
+        display: inline;
+        overflow: hidden;
+    }
+
+    .productDetailContent .productView .alternateViews a {
+        float: left;
+        line-height: 1.1em;
+    }
+
+    .productDetailContent .productView a {
+        float: left;
+        display: inline;
+    }
+
+    .productDetailContent .productView .productMainImage a {
+        float: left;
+        display: inline;
+        height: 213px;
+        width: 263px;
+    }
+
+        .productDetailContent .productView .productMainImage a img {
+            float: left;
+            display: inline;
+            height: 213px;
+            width: 263px;
+        }
+
+    .productDetailContent .productView .alternateImages {
+        float: left;
+        clear: right;
+        width: 58px;
+        margin: 0 0 0 10px;
+        display: inline;
+    }
+
+        .productDetailContent .productView .alternateImages .thumbImage {
+            padding: 0;
+            margin: 0 0 4px 0;
+            float: left;
+            display: inline;
+            clear: both;
+            width: 58px;
+            height: 51px;
+        }
+
+            .productDetailContent .productView .alternateImages .thumbImage a img {
+                width: 58px;
+                height: 47px;
+            }
+
+    .productDetailContent .productView .colorSwatchSet {
+        float: left;
+        clear: both;
+        display: inline;
+        width: 263px;
+        margin: 0 0 0 40px;
+    }
+
+        .productDetailContent .productView .colorSwatchSet h4 {
+            padding: 6px 8px 4px 4px;
+            float: left;
+            color: #5096AA;
+        }
+
+        .productDetailContent .productView .colorSwatchSet .color {
+            background-color: #000;
+            float: left;
+            height: 20px;
+            width: 20px;
+            margin-right: 4px;
+        }
+
+            .productDetailContent .productView .colorSwatchSet .color img {
+                height: 20px;
+                width: 20px;
+                float: left;
+            }
+
+.productDetailContent .productInfo {
+    float: left;
+    margin: 20px 10px 10px 10px;
+    clear: right;
+    width: 408px;
+    display: inline;
+    font-size: 1.1em;
+    line-height: 1.1em;
+}
+
+    .productDetailContent .productInfo p {
+        float: left;
+        clear: both;
+        width: 408px;
+    }
+
+    .productDetailContent .productInfo .purchase {
+        float: left;
+        clear: both;
+        width: 388px;
+        padding: 5px 5px 5px 10px;
+        border: 1px solid #CCCCCC;
+        margin: 10px 0 10px 0;
+        background-color: #FFC;
+    }
+
+        .productDetailContent .productInfo .purchase .price {
+            float: left;
+            color: #5096AA;
+        }
+
+        .productDetailContent .productInfo .purchase .basket {
+            float: right;
+            display: block;
+            visibility: visible;
+        }
+
+            .productDetailContent .productInfo .purchase .basket div {
+                float: right;
+                clear: both;
+                margin: 5px;
+                display: inline;
+            }
+
+                .productDetailContent .productInfo .purchase .basket div span {
+                    float: left;
+                    padding: 4px;
+                    height: 14px;
+                    line-height: 1.4em;
+                }
+
+                    .productDetailContent .productInfo .purchase .basket div span a {
+                        float: left;
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                .productDetailContent .productInfo .purchase .basket div .minus {
+                    background: url("../images/-icon.jpg");
+                    background-repeat: no-repeat;
+                    width: 14px;
+                    height: 14px;
+                    background-position: center;
+                }
+
+                .productDetailContent .productInfo .purchase .basket div .plus {
+                    background: url("../images/+icon.jpg");
+                    background-repeat: no-repeat;
+                    width: 14px;
+                    height: 14px;
+                    background-position: center;
+                }
+
+            .productDetailContent .productInfo .purchase .basket .qtyInput {
+                float: left;
+                font-size: 1.1em;
+                width: 40px;
+                height: 18px;
+                padding: 0 0 0 2px;
+                position: relative;
+            }
+
+    .productDetailContent .productInfo h4 {
+        margin: 10px 10px 10px 6px;
+        float: left;
+        clear: both;
+        width: 386px;
+    }
+
+    .productDetailContent .productInfo .links {
+        margin: 10px 10px 10px 6px;
+        float: left;
+        clear: both;
+        width: 386px;
+    }
+
+        .productDetailContent .productInfo .links span {
+            padding: 0 5px 0 5px;
+            font-size: 1.1em;
+            float: left;
+            width: auto;
+        }
+
+            .productDetailContent .productInfo .links span.pipe {
+                background: url("../images/pipe.png") right;
+                background-repeat: no-repeat;
+            }
+
+    .productDetailContent .productInfo .compare {
+        margin: 10px 10px 10px 6px;
+        width: 386px;
+    }
+
+#productlistingoverlay .phoneColors {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+div.ui-dialog {
+    border: 6px solid #DDDDDD;
+    background-color: #fff;
+    padding: 0px;
+}
+
+    div.ui-dialog .ui-widget-header {
+        background-image: none;
+        background-color: #fff;
+        border: none;
+        padding-top: 10px;
+    }
+
+body .ui-widget-overlay {
+    background-color: #000;
+    filter: Alpha(Opacity=50);
+    opacity: 0.5;
+    background-image: none;
+}
+
+.simQuickView .productDetailContent .productInfo {
+    margin-top: 0px;
+}
+/*---------PRODUCT LISTING PAGE OVERLAY ENDS------------*/
+
+/*Compare basket*/
+
+#compBasket #compBasketDetails {
+    float: left;
+    width: 201px;
+}
+
+    #compBasket #compBasketDetails .compItem {
+        float: left;
+        border-bottom: 1px solid #CCCCCC;
+        width: 186px;
+        padding: 5px 5px 5px 10px;
+    }
+
+        #compBasket #compBasketDetails .compItem div {
+            float: left;
+        }
+
+            #compBasket #compBasketDetails .compItem div.itemImage {
+                width: 80px;
+                height: 60px;
+            }
+
+            #compBasket #compBasketDetails .compItem div img {
+                width: 55px;
+                height: 60px;
+            }
+
+        #compBasket #compBasketDetails .compItem .itemInfo {
+            margin: 6px 0 0 0;
+        }
+
+            #compBasket #compBasketDetails .compItem .itemInfo span {
+                float: left;
+                clear: both;
+                padding: 2px 0 0 0;
+            }
+
+                #compBasket #compBasketDetails .compItem .itemInfo span.brand {
+                    color: #5096AA;
+                    font-size: 1.2em;
+                    font-weight: bold;
+                }
+/*Compare basket*/
+
+.catalogNumber {
+    color: #5C5C5C;
+    font-size: 1.1em;
+    margin-top: 2px;
+    text-align: left;
+}
+
+.offerBlock {
+    background: none repeat scroll 0 0 #FFFEDC;
+    border: 1px solid #CCCCCC;
+    color: #3A7C95;
+    float: left;
+    line-height: 1.2em;
+    padding: 3px;
+    clear: both;
+}
+
+.product .offerBlock {
+    width: 80px;
+    height: 36px;
+    overflow: hidden;
+}
+
+.productLview .offerBlock, .selectedPhone .offerBlock {
+    float: left;
+    height: auto;
+    overflow: hidden;
+    width: 99%;
+    max-height: 24px;
+}
+
+.selectedPhone .priceInfo {
+    margin-bottom: 6px;
+    display: block;
+}
+
+.priceInfoLview .productPrice {
+    margin-top: 0px;
+}
+
+#searchFacetForm .paddingBottom {
+    padding-bottom: 0px;
+}
+
+#productlistingoverlay .genericButton {
+    margin-right: 6px;
+    margin-left: 10px;
+    float: left;
+    width: 106px;
+    float: right;
+    display: inline;
+}
+
+#productlistingoverlay .selectAndView {
+    width: 135px;
+}
+
+#productlistingoverlay .basket .buttonGrp {
+    width: 293px;
+}
+
+/*Catalog Ends ----- Dinesh*/
+
+#myFavouritesList #detailInfo table {
+    margin-top: 10px;
+}
+
+    #myFavouritesList #detailInfo table td {
+        padding: 10px;
+    }
+
+    #myFavouritesList #detailInfo table th, #myFavouritesList #detailInfo table th {
+        background: url(../images/pagetitle-tile.jpg);
+        color: #5C5C5C;
+        font-size: 1.1em;
+    }
+
+    #myFavouritesList #detailInfo table .product {
+        width: 400px;
+    }
+
+    #myFavouritesList #detailInfo table .quantity, #myFavouritesList #detailInfo table .image {
+        text-align: center;
+    }
+
+    #myFavouritesList #detailInfo table .price {
+        text-align: right;
+        padding-right: 15px;
+    }
+
+    #myFavouritesList #detailInfo table td span, #myFavouritesList #detailInfo table td a {
+        font-size: 1.1em;
+    }
+
+    #myFavouritesList #detailInfo table td p {
+        font-size: 1em;
+    }
+
+    #myFavouritesList #detailInfo table tr.dealItem td {
+        border-top: none;
+    }
+
+    #myFavouritesList #detailInfo table .results {
+        font-weight: bold;
+    }
+
+    #myFavouritesList #detailInfo table tr.totalSection td {
+        border-top: none;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-weight: bold;
+    }
+
+    #myFavouritesList #detailInfo table tr.totalSectionAlt td {
+        padding-bottom: 5px;
+        font-weight: bold;
+    }
+
+    #myFavouritesList #detailInfo table .totalPrice, #myFavouritesList #detailInfo table .grandTotal {
+        text-align: right;
+        padding-right: 15px;
+        border-left: 1px solid #CCCCCC;
+    }
+
+    #myFavouritesList #detailInfo table tr.finalSumRow td.grandTotal {
+        border-top: 1px solid #CCCCCC;
+        background-color: #FFFEDC;
+    }
+
+    #myFavouritesList #detailInfo table tr td.grandTotal, #myFavouritesList #detailInfo table tr td.grandTotalLabel {
+        font-size: 1.4em;
+    }
+
+.profileInformation #myFavouritesList {
+    padding: 0;
+}
+
+#myFavouritesList #detailInfo table tr.finalSumRow td {
+    border-bottom: 1px solid #CCCCCC;
+    font-weight: bold;
+}
+
+#myFavouritesList #detailInfo table tr.finalSumRow td {
+    border-top: none;
+}
+
+.viewOrdersSection div.cancelOrder {
+    padding: 10px 5px 10px 25px;
+    display: inline;
+    float: right;
+    width: auto;
+}
+
+.cancelOrder input {
+    background: url("../images/button-generic-tile.jpg") repeat-x scroll 0 0 transparent;
+    border: medium none;
+    color: #FFF;
+    font-weight: bold;
+    float: left;
+    font-size: 1.1em;
+    width: 120px;
+    height: 20px;
+    padding: 2px;
+    margin-right: 4px;
+    position: relative;
+    display: inline;
+    padding: 0 4px 2px 4px;
+    font-family: Arial;
+    float: left;
+}
+
+#myFavouritesList table.giftListsTable tr td.favouriteActions, #myFavouritesList table#giftListItemsTable tr td.reqstd, #myFavouritesList table#giftListItemsTable tr td.favouriteActions {
+    font-size: 1em;
+}
+
+#myFavouritesList table.giftListsTable tr td, #myFavouritesList table#giftListItemsTable tr td {
+    font-size: 1.1em;
+}
+
+#myFavouritesList table.giftListsTable td.favouriteActions .favouriteAdd, #myFavouritesList table#giftListItemsTable td.favouriteActions .favouriteAdd {
+    width: 140px;
+    font-size: 1em;
+    margin: 0;
+}
+
+    #myFavouritesList table.giftListsTable td.favouriteActions .favouriteAdd input, #myFavouritesList table#giftListItemsTable td.favouriteActions .favouriteAdd input {
+        width: 56px;
+        margin: 0 6px 0 0;
+        height: 20px;
+        position: relative;
+        padding: 0 4px 2px 4px;
+        background: url("../images/button-generic-tile.jpg") repeat-x scroll 0 0 transparent;
+        border: medium none;
+        color: #F1F1F1;
+        font-family: arial;
+        font-size: 1.1em;
+        font-weight: bold;
+    }
+
+    #myFavouritesList table#giftListItemsTable td.favouriteActions .favouriteAdd input {
+        width: 100px;
+        margin-bottom: 10px;
+    }
+
+#myFavouritesList table td.reqstd input.updateButton {
+    width: 56px;
+    margin: 0 6px 0 2px;
+    height: 20px;
+    position: relative;
+    padding: 0 4px 2px 4px;
+    background: url("../images/button-generic-tile.jpg") repeat-x scroll 0 0 transparent;
+    border: medium none;
+    color: #F1F1F1;
+    font-family: arial;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+#myFavouritesList input.continueShopping, #myFavouritesList input.update {
+    width: 122px;
+    margin: 0 6px 0 25px;
+    height: 20px;
+    position: relative;
+    padding: 0 4px 2px 6px;
+    background: url("../images/button-generic-tile.jpg") repeat-x scroll 0 0 transparent;
+    border: medium none;
+    color: #F1F1F1;
+    font-family: arial;
+    font-size: 1.1em;
+    font-weight: bold;
+    float: left;
+}
+
+#myFavouritesList input.update {
+    float: right;
+    width: 60px;
+}
+
+#myFavouritesList table.smallWidth td.image {
+    width: 150px;
+}
+
+#myFavouritesList table td.reqstd input.number {
+    height: 16px;
+    font-size: 1.1em;
+}
+
+#myFavouritesList table.smallWidth td.product {
+    width: 300px;
+}
+
+.myAccountHead #giftListSelection a span.downArrow {
+    background: url("../images/dwnarow-dark.png") no-repeat scroll 0 0 transparent;
+    position: relative;
+    right: 0;
+    top: 14px;
+    width: 24px;
+}
+
+.myAccountHead #giftListSelection a span {
+    float: left;
+    margin-right: 0;
+}
+
+.myAccountHead #giftListSelection a {
+    text-decoration: none;
+    float: left;
+}
+
+#myFavouritesList #detailInfo table tr.dealHeading td {
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+
+.SelectList {
+    width: 162px;
+}
+
+.controldiv {
+    margin-bottom: 2px;
+}
+
+.errormsg {
+    float: left;
+    color: red;
+    width: 190px;
+    margin-top: 0px;
+    margin-left: 135px;
+    overflow: hidden;
+}
+
+.errormodel {
+    color: red;
+    overflow: hidden;
+    text-align: center;
+    margin: 5px;
+}

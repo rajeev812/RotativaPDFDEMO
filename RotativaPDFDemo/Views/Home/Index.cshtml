@@ -1,0 +1,23 @@
+﻿@model IEnumerable<RotativaPDFDemo.Models.Sample>
+@{
+    ViewBag.Title = "GeneratePDF";
+}
+
+<h1> GetSamples</h1>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+    </tr>
+
+  
+
+</table>
+<p>
+    <a href="Home/GeneratePDF"> GeneratePDF</a>
+
